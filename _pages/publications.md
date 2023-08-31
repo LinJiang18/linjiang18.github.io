@@ -7,8 +7,6 @@ author_profile: true
 
 **Selected Conference Publications**
 
----
-
 ### 2023 
 
 <span style="color:black;font-weight:bold">[KDD'23]</span> *FairCod: A Fairness-aware Concurrent Dispatch System for Large-scale Instant Delivery Services* <br>
