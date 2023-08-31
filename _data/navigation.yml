@@ -5,7 +5,8 @@ main:
     url: /Services/
 #  - title: "Misc"
 #    url: /misc/
-#  - title: "Personal"
+  - title: "Personal"
+    url: /personal/
 #    url: /personal/
   - title: "Resources"
     url: /resource/
