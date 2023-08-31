@@ -55,7 +55,7 @@ plugins:
 
 author:
   name   : "Lin Jiang"
-  avatar : "/assets/images/linjiang.jpg"
+  avatar : "/assets/images/linjiang1.jpg"
   bio    : "Ph.D. Student, Florida State University"
   links:
     - label: "Google Scholar"
@@ -64,7 +64,7 @@ author:
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/lin-jiang-42769a23b/"
     - label: "Github"
-      icon: "/assets/images/github-mark-white.png"
+      icon: "fab fa-fw fa-github"
       url: "https://github.com/LinJiang18"
 footer:
   links:
@@ -74,7 +74,7 @@ footer:
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/lin-jiang-42769a23b/"
     - label: "Github"
-      icon: "/assets/images/github-mark-white.png"
+      icon: "fab fa-fw fa-github"
       url: "https://github.com/LinJiang18"
 
 defaults:
