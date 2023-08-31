@@ -2,10 +2,12 @@
 title: "Selected Publications"
 layout: single
 classes: wide
+permalink: /publications/
 author_profile: true
 ---
 
 **Selected Conference Publications**
+
 
 ### 2023 
 
