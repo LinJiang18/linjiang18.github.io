@@ -5,7 +5,7 @@ author_profile: true
 ---
 
 
-## Awards
+### Awards
 
 ---
 * KDD Student Travel Grant, 2023
