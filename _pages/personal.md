@@ -15,7 +15,7 @@ author_profile: true
 <p style="text-align:left;">M.E. in Cyber Science <span style="float:right;">Sept. 2020 - June 2023</span></p>
 
 <p style="text-align:left;font-weight:bold">Southeast University (SEU)<span style="float:right;">Nanjing, China</span></p>
-<p style="text-align:left;">B.E. in Chien-Shiung Wu Honored College <span style="float:right;">Sept. 2016 - June 2020</span></p>
+<p style="text-align:left;">B.E. in Information Engineer (Chien-Shiung Wu Honored College) <span style="float:right;">Sept. 2016 - June 2020</span></p>
 
 
 ### Work Experience
