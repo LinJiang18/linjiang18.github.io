@@ -20,9 +20,9 @@ author_profile: true
 ### <span style="color:royalBlue;font-weight:bold">Biography</span>
 
 I am a first year Ph.D. student at CS Department, Florida State University, under supervision of Prof. [Guang Wang](http://guangwang.me/#/home). 
-I am also working with Prof. [Desheng Zhang](https://www.cs.rutgers.edu/~dz220/) in research. I obtained my bachelor degree and master degree both from Southeast University(China).
+<br>I am also working with Prof. [Desheng Zhang](https://www.cs.rutgers.edu/~dz220/) in research. I obtained my bachelor degree and master degree both from Southeast University(China).
 
-My research interests are broadly in the areas of **Cyber-Physical Systems**, **Human-Centered Computing**, and **Trustworthy Decision-making Applications**.<br>You can contact me at lj23d AT fsu DOT edu.
+My research interests are broadly in the areas of **Cyber-Physical Systems**, **Human-Centered Computing**, and **Trustworthy Decision-making Applications**.You can contact me at lj23d AT fsu DOT edu.
 
 My publications can also be found at [Google Scholar](https://scholar.google.com.hk/citations?user=G66TbJYAAAAJ&hl=zh-CN). 
 
