@@ -63,6 +63,9 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/lin-jiang-42769a23b/"
+    - label: "Github"
+      icon: "/assets/images/github-mark.png"
+      url: "https://github.com/LinJiang18"
 footer:
   links:
     - label: "Google Scholar"
