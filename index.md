@@ -20,7 +20,7 @@ author_profile: true
 ### <span style="color:royalBlue;font-weight:bold">Biography</span>
 
 I am a first-year Ph.D. student at CS Department, Florida State University, under the supervision of Prof. [Guang Wang](http://guangwang.me/#/home). 
-<br>I am also working with Prof. [Desheng Zhang](https://www.cs.rutgers.edu/~dz220/) in research. I obtained my bachelor's degree and master's degree both <br>from Southeast University(China).
+<br>I am also working with Prof. [Desheng Zhang](https://www.cs.rutgers.edu/~dz220/) in research. I obtained my bachelor's degree and master's degree both <br>from Southeast University (China).
 
 My research interests are broadly in the areas of **Cyber-Physical Systems**, **Human-Centered Computing**, and **Trustworthy Decision-making Applications**. You can contact me at lj23d AT fsu DOT edu.
 
@@ -33,7 +33,7 @@ My publications can also be found at [Google Scholar](https://scholar.google.com
 [//]: # (**Recent News**)
 
 * Aug. 2023: Start my Ph.D. journey at FSU!
-* Aug. 2023: I presented my fist-author work [Faircod](https://dl.acm.org/doi/10.1145/3580305.3599824) about fairness-aware concurrent dispatch system at KDD 2023 and received the KDD travel grant.
+* Aug. 2023: I presented my fist-author work [Faircod](https://dl.acm.org/doi/10.1145/3580305.3599824) about fairness-aware concurrent dispatch system at KDD' 2023 and received the KDD travel grant.
 
 
 
