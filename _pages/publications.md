@@ -9,8 +9,18 @@ author_profile: true
 ## Selected Conference Publications
 
 ### 2023 
+
+<span style="color:black;font-weight:bold">[TMC'23]</span> *FairMove: A Data-Driven Vehicle Displacement System for Jointly Optimizing Profit Efficiency and Fairness of Electric For-Hire Vehicles* <br>
+Guang Wang, Sihong He, **Lin Jiang**, Shuai Wang, Fei Miao, Fan Zhang, Zheng Dong and Desheng Zhang<br>
+
+
 <span style="color:black;font-weight:bold">[KDD'23]</span> *FairCod: A Fairness-aware Concurrent Dispatch System for Large-scale Instant Delivery Services* <br>
 **Lin Jiang**, Shuai Wang, Baoshen Guo, Hai Wang, Desheng Zhang, Guang Wang<br>
+
+
+### 2022
+<span style="color:black;font-weight:bold">[WASA'22]</span> *Toward Multi-sided Fairness: A Fairness-Aware Order Dispatch System for Instant Delivery Service* <br>
+Zouyin Cao, **Lin Jiang**, Xiaolei Zhou, Shilin Zhu, Hai Wang, Shuai Wang<br>
 
 
 ### 2021
