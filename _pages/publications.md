@@ -8,6 +8,13 @@ author_profile: true
 
 ## Selected Conference Publications
 
+### 2025
+<span style="color:black;font-weight:bold">[IJCAI'25]</span> HCRide: Harmonizing Passenger Fairness and Driver Preference for Human-Centered Ride-Hailing<br>
+**Lin Jiang**, Yu Yang, and Guang Wang<br>
+
+<span style="color:black;font-weight:bold">[IJCAI'25]</span> Uncertainty-aware Predict-Then-Optimize Framework for Equitable Post-Disaster Power Restoration<br>
+**Lin Jiang**, Dahai Yu, Rongchao Xu, Tian Tang, and Guang Wang<br>
+
 ### 2023 
 
 <span style="color:black;font-weight:bold">[TMC'23]</span> *FairMove: A Data-Driven Vehicle Displacement System for Jointly Optimizing Profit Efficiency and Fairness of Electric For-Hire Vehicles* <br>
