@@ -33,12 +33,13 @@ My publications can also be found at [Google Scholar](https://scholar.google.com
 
 [//]: # (**Recent News**)
 
-* May 2025: Very excited to share that my first two papers at FSU have been accepted to the top conference IJCAI 2025 — a great start!
-* April 2025: Excited to share that I won the Research Presentation Award Runner-up at CS Expo 2025 in FSU!
-* Oct. 2023: One paper about data-driven vehicle displacement system is accepted to IEEE TMC.
-* Aug. 2023: Start my Ph.D. journey at FSU!
-* Aug. 2023: I presented my fist-author work [Faircod](https://dl.acm.org/doi/10.1145/3580305.3599824) about fairness-aware concurrent dispatch system at top conference KDD 2023 and received the KDD travel grant.
-
+- **June 2025**: Honored to receive the **IJCAI'25 Committee Travel Grant** — thank you, IJCAI!
+- **May 2025**: Thrilled to share that my **first two papers at FSU** have been accepted to *IJCAI 2025*, a top-tier AI conference — a great start to my Ph.D. journey!
+- **April 2025**: Received the **Runner-up Award** for Research Presentation at the *CS Expo 2025*, Florida State University (FSU).
+- **October 2023**: Our paper on a **data-driven vehicle displacement system** was accepted to *IEEE Transactions on Mobile Computing (TMC)*.
+- **August 2023**: Officially began my **Ph.D. journey at Florida State University (FSU)**!
+- **August 2023**: Presented my first-author work, [**Faircod**](https://dl.acm.org/doi/10.1145/3580305.3599824), 
+a fairness-aware concurrent dispatch system, at *KDD 2023*. Grateful to receive the **KDD Travel Grant**.
 
 
 

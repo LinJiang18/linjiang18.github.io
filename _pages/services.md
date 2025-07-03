@@ -8,6 +8,7 @@ author_profile: true
 ### Awards
 
 ---
+* Travel Grant IJCAI'25, 2025
 * Research Presentation Award Runner-up at CS Expo FSU, 2025
 * Travel Grant SDM’24 Doctoral Forum, 2024
 * KDD Student Travel Grant, 2023
