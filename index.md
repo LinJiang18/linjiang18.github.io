@@ -33,7 +33,7 @@ My publications can also be found at [Google Scholar](https://scholar.google.com
 
 [//]: # (**Recent News**)
 
-- **June 2025**: Honored to receive the **IJCAI'25 Committee Travel Grant** — thank you, IJCAI!
+- **June 2025**: Honored to receive the **IJCAI'25 Travel Grant** — thank you, IJCAI!
 - **May 2025**: Thrilled to share that my **first two papers at FSU** have been accepted to *IJCAI 2025*, a top-tier AI conference — a great start to my Ph.D. journey!
 - **April 2025**: Received the **Runner-up Award** for Research Presentation at the *CS Expo 2025*, Florida State University.
 - **October 2023**: Our paper on a **data-driven vehicle displacement system** was accepted to *IEEE Transactions on Mobile Computing (TMC)*.
