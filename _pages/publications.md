@@ -9,6 +9,9 @@ author_profile: true
 ## Selected Conference Publications
 
 ### 2025
+<span style="color:black;font-weight:bold">[ACM SIGSPATIAL'25]</span> UQGNN: Uncertainty Quantification of Graph Neural Networks for Multimodal Spatiotemporal Prediction<br>
+Dahai Yu，Dingyi Zhuang, **Lin Jiang**，Rongchao Xu, Xinyue Ye, Yuheng Bu, Shenhao Wang, Guang Wang<br>
+
 <span style="color:black;font-weight:bold">[IJCAI'25]</span> HCRide: Harmonizing Passenger Fairness and Driver Preference for Human-Centered Ride-Hailing<br>
 **Lin Jiang**, Yu Yang, and Guang Wang<br>
 
