@@ -23,7 +23,7 @@ I am a  Ph.D. student at CS Department, Florida State University, under the supe
 
 I have a strong interest in both generation and decision-making.
 My current research focuses on **task-oriented data generation for downstream applications** and **trustworthy decision-making systems**. I am also open to collaborations in new directions. 
-You can contact me at lj23d@fsu.edu.
+You can contact me at lin.jiang@fsu.edu.
 
 My publications can also be found at [Google Scholar](https://scholar.google.com.hk/citations?user=G66TbJYAAAAJ&hl=zh-CN). 
 
