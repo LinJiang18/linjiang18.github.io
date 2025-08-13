@@ -34,8 +34,8 @@ My publications can also be found at [Google Scholar](https://scholar.google.com
 [//]: # (**Recent News**)
 
 - **August 2025**: Our paper about **Uncertainty Quantification of GNNs** is accepted by *ACM SIGSPATIAL 2025* (full research paper track).
-- **June 2025**: Honored to receive the **IJCAI'25 Travel Grant** — thank you, IJCAI!
-- **May 2025**: Thrilled to share that my **first two papers at FSU** have been accepted to *IJCAI 2025*, a top-tier AI conference — a great start to my Ph.D. journey!
+- **June 2025**: Honored to receive the **IJCAI'25 Travel Grant**.
+- **May 2025**: Thrilled to share that my **first two papers at FSU** have been accepted to *IJCAI 2025* — a good start to my Ph.D. journey!
 - **April 2025**: Received the **Runner-up Award** for Research Presentation at the *CS Expo 2025*, Florida State University.
 - **October 2023**: Our paper on a **Data-driven Vehicle Displacement System** was accepted to *IEEE Transactions on Mobile Computing (TMC)*.
 - **August 2023**: Officially began my **Ph.D. journey at Florida State University (FSU)**!
