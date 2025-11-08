@@ -8,6 +8,12 @@ author_profile: true
 
 ## Selected Conference Publications
 
+### 2026
+<span style="color:black;font-weight:bold">[AAAI'26]</span> GeoGen: A Two-stage Coarse-to-Fine Framework for Fine-grained Synthetic Location-based Social Network Trajectory Generation<br>
+Rongchao Xu, Kunlin Cai, **Lin Jiang**, Dahai Yu, Zhiqing Hong, Yuan Tian, and Guang Wang*<br>
+
+
+
 ### 2025
 <span style="color:black;font-weight:bold">[ACM SIGSPATIAL'25]</span> UQGNN: Uncertainty Quantification of Graph Neural Networks for Multimodal Spatiotemporal Prediction<br>
 Dahai Yu，Dingyi Zhuang, **Lin Jiang**, Rongchao Xu, Xinyue Ye, Yuheng Bu, Shenhao Wang, Guang Wang<br>
