@@ -10,7 +10,7 @@ author_profile: true
 
 ### 2026
 <span style="color:black;font-weight:bold">[AAAI'26]</span> GeoGen: A Two-stage Coarse-to-Fine Framework for Fine-grained Synthetic Location-based Social Network Trajectory Generation<br>
-Rongchao Xu, Kunlin Cai, **Lin Jiang**, Dahai Yu, Zhiqing Hong, Yuan Tian, and Guang Wang*<br>
+Rongchao Xu, Kunlin Cai, **Lin Jiang**, Dahai Yu, Zhiqing Hong, Yuan Tian, and Guang Wang<br>
 
 
 
