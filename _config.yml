@@ -56,8 +56,9 @@ plugins:
 author:
   name   : "Lin Jiang"
   avatar : "/assets/images/linjiang.jpg"
-  bio    : "Ph.D. Student, Florida State University"
-  motto  : "One paper a day, keep the unemployment away"
+  bio: |
+    Ph.D. Student, Florida State University
+    One paper a day, keep the unemployment away
   links:
     - label: "Google Scholar"
       url: "https://scholar.google.com.hk/citations?user=G66TbJYAAAAJ&hl=zh-CN"
