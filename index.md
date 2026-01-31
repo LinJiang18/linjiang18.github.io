@@ -33,6 +33,7 @@ My publications can also be found at [Google Scholar](https://scholar.google.com
 
 [//]: # (**Recent News**)
 
+- **January 2026**: One co-first author paper about **Human-robot Collaboration** is accepted by *ICRA 2026*.
 - **November 2025**: Our paper about **Trajectory Generation with Diffusion Models** is accepted by *AAAI 2026*.
 - **November 2025**: I am very glad to serve on the Technical Program Committee for ACM SIGSPATIAL [**SpatialConnect 2025**](https://spatialconnect.github.io/2025/). It is an exciting and inspiring event!
 - **August 2025**: Our paper about **Uncertainty Quantification of GNNs** is accepted by *ACM SIGSPATIAL 2025* (full research paper track).

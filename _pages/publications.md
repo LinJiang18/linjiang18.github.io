@@ -9,6 +9,10 @@ author_profile: true
 ## Selected Conference Publications
 
 ### 2026
+
+<span style="color:black;font-weight:bold">[ICRA'26]</span> UrbanHuRo: A Two-Layer Human-Robot Collaboration Framework for the Joint Optimization of Heterogeneous Urban Services<br>
+Tonmoy Dey*, **Lin Jiang***, Zheng Dong, and Guang Wang<br> *Co-first authors (equal contribution)
+
 <span style="color:black;font-weight:bold">[AAAI'26]</span> GeoGen: A Two-stage Coarse-to-Fine Framework for Fine-grained Synthetic Location-based Social Network Trajectory Generation<br>
 Rongchao Xu, Kunlin Cai, **Lin Jiang**, Dahai Yu, Zhiqing Hong, Yuan Tian, and Guang Wang<br>
 
