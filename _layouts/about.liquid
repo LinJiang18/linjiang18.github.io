@@ -56,8 +56,11 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
-    <!-- Selected papers -->
+    <!-- Selected papers (order fixed via nocite → cited_in_order in selected_papers.liquid) -->
     {% if page.selected_papers %}
+      <div class="d-none" aria-hidden="true">
+        {% nocite jiang2025hcriede jiang2025upro jiang2023faircod jiang2026urbanhuro jiang2026synhat %}
+      </div>
       <h2>
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
       </h2>
