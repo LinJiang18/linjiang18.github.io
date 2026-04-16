@@ -2,16 +2,17 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: >
+  Ph.D. Candidate,<br>
+  <a href="https://www.cs.fsu.edu/">Department of Computer Science</a>,<br>
+  <a href="https://www.fsu.edu/">Florida State University</a>
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p><a href="mailto:lin.jiang@fsu.edu">lin.jiang@fsu.edu</a></p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,8 +28,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a Ph.D. candidate in the [Department of Computer Science](https://www.cs.fsu.edu/) at [Florida State University](https://www.fsu.edu/), where I work with Prof. [Guang Wang](http://guangwang.me/#/home). I received both my B.S. and M.S. degrees from [Southeast University](https://www.seu.edu.cn/english/), China.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/publications/) automatically.
+My research interests center on **generation** and **decision-making**. Currently, I focus on **task-oriented data generation for downstream applications** and **trustworthy decision-making systems**. I welcome conversations and collaborations, including directions beyond my present projects.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My publications are listed on the [Publications](/publications/) page and on [Google Scholar](https://scholar.google.com.hk/citations?user=G66TbJYAAAAJ&hl=zh-CN).
