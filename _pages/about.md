@@ -5,7 +5,7 @@ permalink: /
 subtitle: >
   Ph.D. Candidate,<br>
   <a href="https://www.cs.fsu.edu/">Department of Computer Science</a>,<br>
-  <a href="https://cs.fsu.edu/department/faculty/guang">Data, Computing, and Society (DCS) Lab</a>,<br>
+  <a href="http://guangwang.me/#/student">Data, Computing, and Society (DCS) Lab</a>,<br>
   <a href="https://www.fsu.edu/">Florida State University</a>
 
 profile:
@@ -20,13 +20,11 @@ social: true # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  scrollable: false
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
 ---
 
 I am a Ph.D. candidate in the [Department of Computer Science](https://www.cs.fsu.edu/) at [Florida State University](https://www.fsu.edu/) and a member of the [Data, Computing, and Society (DCS) Lab](https://cs.fsu.edu/department/faculty/guang), under the supervision of Prof. [Guang Wang](http://guangwang.me/#/home). I received both my B.S. and M.S. degrees from [Southeast University](https://www.seu.edu.cn/english/), China, where I worked with Prof. [Shuai Wang](https://cs.seu.edu.cn/shuaiwang/main.htm).
