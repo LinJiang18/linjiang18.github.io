@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-experience",
           title: "Experience",
-          description: "Awards, work, education, and academic service — edit entries in `_data/cv.yml`.",
+          description: "Awards, work, education, and academic service.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/experience/";
