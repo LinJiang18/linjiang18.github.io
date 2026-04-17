@@ -30,6 +30,22 @@ cv:
         year: "2019"
       - title: "**Merit Student Scholarship**"
         year: "2017"
-    Working Experiences: []
-    Education Experiences: []
-    Academic Service: []
+    Working Experiences:
+      - line: "**Research Intern**, 2021-07 ~ 2023-06, Data and AI Lab, JD Logistics"
+    Education Experiences:
+      - line: "**Ph.D. in Computer Science**, 2023.09 ~ Current, Florida State University"
+      - line: "**Master in Cyber Science**, 2020.09 ~ 2023.06, Southeast University"
+      - line: "**Bachelor in Information Engineering**, 2016.09 ~ 2020.09, Southeast University"
+    Academic Service:
+      - line: "**AAAI** 2025, 2026"
+      - line: "**IJCAI** 2025, 2026"
+      - line: "**ACM IMWUT** 2025, 2026"
+      - line: "**KDD** 2023, 2024, 2025, 2026"
+      - line: "**WWW** 2025"
+      - line: "**ICDE** 2026"
+      - line: "**CIKM** 2024"
+      - line: "**IEEE Transactions on Pattern Analysis and Machine Intelligence**"
+      - line: "**IEEE Transactions on Big Data**"
+      - line: "**ACM Transactions on Multimedia Computing, Communications, and Applications**"
+      - line: "**CAAI Transactions on Intelligence Technology**"
+      - line: "**Urban Computation Science**"

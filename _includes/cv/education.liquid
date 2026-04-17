@@ -1,13 +1,15 @@
 {% comment %}
-  Unified education entry renderer for both RenderCV and JSONResume formats
-  Handles both:
-  - RenderCV: institution, area, studyType (or degree), start_date, end_date, location, courses, highlights
-  - JSONResume: institution, area, studyType, startDate, endDate, location, courses, highlights
+  Education: compact `line` (markdown bullet) or structured institution / studyType / dates / etc.
 {% endcomment %}
 
-<ul class="card-text font-weight-light list-group list-group-flush">
+<ul class="card-text font-weight-light cv-experience-list">
   {% for entry in entries %}
-    <li class="list-group-item">
+    {% if entry.line %}
+      <li class="cv-experience-line">
+        <div class="cv-experience-line-inner">{{ entry.line | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+      </li>
+    {% else %}
+    <li class="cv-experience-legacy list-group-item">
       <div class="row">
         <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
           {% capture start_date %}
@@ -89,5 +91,6 @@
         </div>
       </div>
     </li>
+    {% endif %}
   {% endfor %}
 </ul>

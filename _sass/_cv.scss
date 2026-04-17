@@ -151,6 +151,37 @@ td.list-group-link {
 }
 
 /*****************************
+ * Experience (compact `line` bullets vs legacy timeline rows)
+ *****************************/
+
+ul.cv-experience-list {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+}
+
+li.cv-experience-line {
+  margin-bottom: 0.35rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cv-experience-line-inner {
+  display: inline;
+}
+
+li.cv-experience-legacy {
+  list-style-type: none;
+  margin-left: -1.25rem;
+  padding-left: 0;
+  margin-bottom: 0.75rem;
+  border: 0 !important;
+}
+
+/*****************************
  * Awards (compact list: title left, year right)
  *****************************/
 
