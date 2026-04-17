@@ -1,19 +1,29 @@
 $(document).ready(function () {
   // add toggle functionality to abstract, award and bibtex buttons
-  $("a.abstract").click(function () {
-    $(this).parent().parent().find(".abstract.hidden").toggleClass("open");
-    $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
-    $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
+  // Use the publication .row: hidden blocks (.bibtex, .abstract) are siblings of .links, not descendants, and BIB sits inside an extra span.
+  function publicationRow(elt) {
+    return $(elt).closest(".row");
+  }
+  $("a.abstract").click(function (e) {
+    e.preventDefault();
+    var $row = publicationRow(this);
+    $row.find(".abstract.hidden").toggleClass("open");
+    $row.find(".award.hidden.open").toggleClass("open");
+    $row.find(".bibtex.hidden.open").toggleClass("open");
   });
-  $("a.award").click(function () {
-    $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
-    $(this).parent().parent().find(".award.hidden").toggleClass("open");
-    $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
+  $("a.award").click(function (e) {
+    e.preventDefault();
+    var $row = publicationRow(this);
+    $row.find(".abstract.hidden.open").toggleClass("open");
+    $row.find(".award.hidden").toggleClass("open");
+    $row.find(".bibtex.hidden.open").toggleClass("open");
   });
-  $("a.bibtex").click(function () {
-    $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
-    $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
-    $(this).parent().parent().find(".bibtex.hidden").toggleClass("open");
+  $("a.bibtex").click(function (e) {
+    e.preventDefault();
+    var $row = publicationRow(this);
+    $row.find(".abstract.hidden.open").toggleClass("open");
+    $row.find(".award.hidden.open").toggleClass("open");
+    $row.find(".bibtex.hidden").toggleClass("open");
   });
   $("a").removeClass("waves-effect waves-light");
 
