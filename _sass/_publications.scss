@@ -149,6 +149,41 @@ $publication-abbr-bg-dark: #304f78;
       }
 
       .links {
+        .publication-bib-html-btns {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.45rem;
+          margin-right: 0.6rem;
+          margin-bottom: 0.35rem;
+          flex-wrap: wrap;
+          vertical-align: middle;
+        }
+
+        a.publication-bib-html-btn {
+          display: inline-block;
+          padding: 0.2rem 0.65rem;
+          font-size: 0.72rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          line-height: 1.2;
+          color: var(--global-theme-color) !important;
+          background-color: var(--global-card-bg-color);
+          border: 1px solid var(--global-text-color) !important;
+          border-radius: 2px;
+          text-decoration: none !important;
+          margin-left: 0 !important;
+          box-shadow: none !important;
+
+          &:hover,
+          &:focus {
+            color: var(--global-theme-color) !important;
+            border-color: var(--global-text-color) !important;
+            text-decoration: none !important;
+            opacity: 0.92;
+          }
+        }
+
         a.btn {
           color: var(--global-text-color);
           border: 1px solid var(--global-text-color);
