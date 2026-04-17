@@ -1,0 +1,75 @@
+/*****************************
+ * Research page (/projects/) — layout matches reference template
+ *****************************/
+
+.research-page-stacked {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+/* --- Research Overview: light blue block, centered bold title --- */
+.research-overview-block {
+  border-radius: 0.35rem;
+
+  .research-overview-heading {
+    font-weight: 900;
+    color: var(--global-text-color);
+    font-size: 1.2rem;
+    letter-spacing: 0.01em;
+    margin-bottom: 0.75rem;
+  }
+
+  p:not(.research-overview-heading) strong {
+    font-weight: 800;
+    color: var(--global-text-color);
+  }
+}
+
+/* --- Invited Talk: section title outside + bordered light panel --- */
+.research-invited-section {
+  .research-invited-heading {
+    font-weight: 400;
+    font-size: 1.35rem;
+    color: var(--global-text-color);
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin-bottom: 0.5rem;
+  }
+
+  .research-invited-panel {
+    background-color: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.35rem;
+    padding: 1rem 1rem 0.85rem;
+  }
+
+  .research-invited-scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100%;
+    -webkit-overflow-scrolling: touch;
+    margin-left: -0.35rem;
+    margin-right: -0.35rem;
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+    padding-bottom: 0.35rem;
+  }
+
+  .research-invited-list {
+    width: max-content;
+    max-width: none;
+    margin-bottom: 0;
+    padding-left: 1.25rem;
+    color: var(--global-text-color);
+  }
+
+  .research-invited-list li {
+    white-space: nowrap;
+    margin-bottom: 0.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
