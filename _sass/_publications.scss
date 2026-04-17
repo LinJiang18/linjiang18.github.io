@@ -4,8 +4,9 @@
 
 @use "variables" as v;
 
-/* Venue badge: calmer than --global-theme-color (links stay the brighter blue) */
-$publication-abbr-bg: #304f78;
+/* Venue badge (light fill; dark text for contrast) */
+$publication-abbr-bg: #eaf4ff;
+$publication-abbr-fg: v.$black-color;
 
 .publications {
   margin-top: 2rem;
@@ -66,7 +67,8 @@ $publication-abbr-bg: #304f78;
           display: inline-block;
           background-color: $publication-abbr-bg;
           margin-bottom: 0.5rem;
-          color: var(--global-card-bg-color) !important;
+          color: $publication-abbr-fg !important;
+          border: 1px solid rgba(0, 50, 120, 0.12);
 
           &.publication-abbr-badge {
             display: inline-flex;
@@ -92,14 +94,14 @@ $publication-abbr-bg: #304f78;
           .publication-abbr-year {
             flex-shrink: 0;
             font-weight: 700;
-            opacity: 0.92;
+            opacity: 0.85;
           }
 
           a {
-            color: white;
+            color: var(--global-theme-color);
 
             &:hover {
-              text-decoration: none;
+              text-decoration: underline;
             }
           }
         }
