@@ -6,7 +6,8 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Lin
 last_name: Jiang
 contact_note: >
-  Email is the best way to reach me.
+  With thanks — this site was cloned from
+  <a href="https://baoshenguo.com/" target="_blank" rel="noopener noreferrer">Baoshen Guo's academic homepage</a>.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Lin Jiang — Ph.D. candidate in Computer Science at Florida State University. Research on data generation and trustworthy decision-making.
 footer_text: >
