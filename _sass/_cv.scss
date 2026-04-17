@@ -151,6 +151,62 @@ td.list-group-link {
 }
 
 /*****************************
+ * Awards (compact list: title left, year right)
+ *****************************/
+
+ul.cv-awards-list {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+}
+
+li.cv-awards-item {
+  margin-bottom: 0.35rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cv-awards-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+}
+
+.cv-awards-main {
+  flex: 1 1 auto;
+  min-width: min(100%, 12rem);
+}
+
+.cv-awards-title {
+  display: inline;
+}
+
+.cv-awards-year {
+  flex: 0 0 auto;
+  color: var(--global-text-color-light);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+a.cv-award-link {
+  margin-left: 0.4rem;
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+
+li.cv-awards-item--legacy {
+  list-style-type: none;
+  margin-left: -1.25rem;
+  padding-left: 0;
+  margin-bottom: 0.75rem;
+}
+
+/*****************************
  * CV TOC styles
  *****************************/
 

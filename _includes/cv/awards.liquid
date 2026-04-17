@@ -1,66 +1,92 @@
 {% comment %}
-  Unified awards entry renderer for both formats
+  Awards: compact list (title + year + optional links) or legacy card layout, or freeform `line` (markdown).
 {% endcomment %}
 
-<ul class="card-text font-weight-light list-group list-group-flush">
+<ul class="card-text font-weight-light cv-awards-list">
   {% for entry in entries %}
-    <li class="list-group-item">
-      <div class="row">
-        {% capture start_date %}
-          {% if entry.date %}{{ entry.date }}{% endif %}
-        {% endcapture %}
-
-        {% if start_date != '' %}
-          <div class="col-xs-2 col-sm-2 col-md-2 text-center">
-            <table class="table-cv">
-              <tbody>
-                <tr>
-                  <td>
-                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
-                      {{- start_date | split: '-' | slice: 0, 1 | join: '' -}}
-                    </span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
-            {% if entry.url %}
-              <h6 class="title font-weight-bold ml-1 ml-md-4">
-                <a href="{{ entry.url }}">{{ entry.title }}</a>
-              </h6>
-            {% elsif entry.title %}
-              <h6 class="title font-weight-bold ml-1 ml-md-4">{{ entry.title }}</h6>
-            {% endif %}
-
-            {% if entry.awarder %}
-              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ entry.awarder }}</h6>
-            {% endif %}
-
-            {% if entry.summary %}
-              <p class="ml-1 ml-md-4">{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    {% if entry.line %}
+      <li class="cv-awards-item">
+        <div class="cv-awards-line">{{ entry.line | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+      </li>
+    {% elsif entry.year and entry.title %}
+      <li class="cv-awards-item">
+        <div class="cv-awards-row">
+          <div class="cv-awards-main">
+            <span class="cv-awards-title">{{ entry.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>
+            {% if entry.links %}
+              {% for link in entry.links %}
+                <a
+                  href="{{ link.url }}"
+                  class="cv-award-link"
+                  {% if link.url contains '://' %}
+                    target="_blank" rel="noopener noreferrer"
+                  {% endif %}
+                  >{{ link.label }}</a>
+              {% endfor %}
             {% endif %}
           </div>
-        {% else %}
-          <div class="col-xs-12 col-sm-12 col-md-12">
-            {% if entry.url %}
-              <h6 class="title font-weight-bold ml-1 ml-md-4">
-                <a href="{{ entry.url }}">{{ entry.title }}</a>
-              </h6>
-            {% elsif entry.title %}
-              <h6 class="title font-weight-bold ml-1 ml-md-4">{{ entry.title }}</h6>
-            {% endif %}
+          <span class="cv-awards-year">{{ entry.year }}</span>
+        </div>
+      </li>
+    {% else %}
+      <li class="cv-awards-item cv-awards-item--legacy">
+        <div class="row">
+          {% capture start_date %}
+            {% if entry.date %}{{ entry.date }}{% endif %}
+          {% endcapture %}
 
-            {% if entry.awarder %}
-              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ entry.awarder }}</h6>
-            {% endif %}
+          {% if start_date != '' %}
+            <div class="col-xs-2 col-sm-2 col-md-2 text-center">
+              <table class="table-cv">
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
+                        {{- start_date | split: '-' | slice: 0, 1 | join: '' -}}
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+              {% if entry.url %}
+                <h6 class="title font-weight-bold ml-1 ml-md-4">
+                  <a href="{{ entry.url }}">{{ entry.title }}</a>
+                </h6>
+              {% elsif entry.title %}
+                <h6 class="title font-weight-bold ml-1 ml-md-4">{{ entry.title }}</h6>
+              {% endif %}
 
-            {% if entry.summary %}
-              <p class="ml-1 ml-md-4">{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-            {% endif %}
-          </div>
-        {% endif %}
-      </div>
-    </li>
+              {% if entry.awarder %}
+                <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ entry.awarder }}</h6>
+              {% endif %}
+
+              {% if entry.summary %}
+                <p class="ml-1 ml-md-4">{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+              {% endif %}
+            </div>
+          {% else %}
+            <div class="col-xs-12 col-sm-12 col-md-12">
+              {% if entry.url %}
+                <h6 class="title font-weight-bold ml-1 ml-md-4">
+                  <a href="{{ entry.url }}">{{ entry.title }}</a>
+                </h6>
+              {% elsif entry.title %}
+                <h6 class="title font-weight-bold ml-1 ml-md-4">{{ entry.title }}</h6>
+              {% endif %}
+
+              {% if entry.awarder %}
+                <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ entry.awarder }}</h6>
+              {% endif %}
+
+              {% if entry.summary %}
+                <p class="ml-1 ml-md-4">{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      </li>
+    {% endif %}
   {% endfor %}
 </ul>

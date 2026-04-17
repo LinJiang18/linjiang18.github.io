@@ -4,9 +4,10 @@
 
 @use "variables" as v;
 
-/* Venue badge (light fill; dark text for contrast) */
+/* Venue badge: light mode = pale blue; dark mode = deep blue pill */
 $publication-abbr-bg: #cfe8ff;
 $publication-abbr-fg: v.$black-color;
+$publication-abbr-bg-dark: #304f78;
 
 .publications {
   margin-top: 2rem;
@@ -227,6 +228,21 @@ $publication-abbr-fg: v.$black-color;
     }
     div.award.hidden.open {
       border-color: var(--global-highlight-color);
+    }
+  }
+}
+
+html[data-theme="dark"] .publications ol.bibliography li .abbr abbr {
+  background-color: $publication-abbr-bg-dark;
+  color: v.$white-color !important;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  a {
+    color: #cfe8ff;
+
+    &:hover {
+      color: #eaf4ff;
+      text-decoration: underline;
     }
   }
 }
