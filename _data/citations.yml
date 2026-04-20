@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-04-17'
+  last_updated: '2026-04-20'
 papers:
   G66TbJYAAAAJ:9yKSN-GCB0IC:
     citations: 0
     title: 'Toward Multi-sided Fairness: A Fairness-Aware Order Dispatch System for Instant Delivery Service'
     year: '2022'
   G66TbJYAAAAJ:LkGwnXOMwfcC:
-    citations: 3
+    citations: 4
     title: 'GeoGen: A Two-stage Coarse-to-Fine Framework for Fine-grained Synthetic Location-based Social Network Trajectory Generation'
     year: '2025'
   G66TbJYAAAAJ:Se3iqnhoufwC:
@@ -17,16 +17,20 @@ papers:
     citations: 28
     title: 'Faircod: A fairness-aware concurrent dispatch system for large-scale instant delivery services'
     year: '2023'
+  G66TbJYAAAAJ:UebtZRa9Y70C:
+    citations: 0
+    title: 'SynHAT: A Two-stage Coarse-to-Fine Diffusion Framework for Synthesizing Human Activity Traces'
+    year: '2026'
   G66TbJYAAAAJ:WF5omc3nYNoC:
-    citations: 2
+    citations: 3
     title: Uncertainty-aware Predict-Then-Optimize Framework for Equitable Post-Disaster Power Restoration
     year: '2025'
   G66TbJYAAAAJ:Y0pCki6q_DkC:
-    citations: 4
+    citations: 5
     title: 'HCRide: Harmonizing Passenger Fairness and Driver Preference for Human-Centered Ride-Hailing'
     year: '2025'
   G66TbJYAAAAJ:YsMSGLbcyi4C:
-    citations: 2
+    citations: 3
     title: 'UQGNN: Uncertainty Quantification of Graph Neural Networks for Multivariate Spatiotemporal Prediction'
     year: '2025'
   G66TbJYAAAAJ:qjMakFHDy7sC:
@@ -34,7 +38,7 @@ papers:
     title: Cross-corpus speech emotion recognition using joint distribution adaptive regression
     year: '2021'
   G66TbJYAAAAJ:roLk4NBRz8UC:
-    citations: 0
+    citations: 1
     title: 'HealthMamba: An Uncertainty-aware Spatiotemporal Graph State Space Model for Effective and Reliable Healthcare Facility Visit Prediction'
     year: '2026'
   G66TbJYAAAAJ:zYLM7Y9cAGgC:
