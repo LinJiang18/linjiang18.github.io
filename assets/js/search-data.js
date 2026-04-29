@@ -431,7 +431,12 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-about-human-activity-trace-generation-is-accepted-by-acm-imwut-ubicomp-2026",
           title: 'Our paper about Human Activity Trace Generation is accepted by ACM IMWUT/UbiComp 2026....',
           description: "",
-          section: "News",},{id: "news-our-paper-on-healthcare-poi-visitation-prediction-has-been-accepted-to-ijcai-2026-ai-and-health-track",
+          section: "News",},{id: "news-graduate-student-research-award-and-baker-scholarship",
+          title: 'Graduate Student Research Award and Baker Scholarship',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026-04-28-graduate-research-baker-scholarship/";
+            },},{id: "news-our-paper-on-healthcare-poi-visitation-prediction-has-been-accepted-to-ijcai-2026-ai-and-health-track",
           title: 'Our paper on healthcare POI visitation prediction has been accepted to IJCAI 2026...',
           description: "",
           section: "News",},{id: "projects-project-1",
