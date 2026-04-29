@@ -13,7 +13,8 @@
           <span class="news-list__date">[{{ item.date | date: '%Y/%m' }}]</span>
           <span class="news-list__body">
             {% if item.inline %}
-              {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+              {% assign news_inline = item.excerpt | default: item.content %}
+              {{ news_inline | remove: '<p>' | remove: '</p>' | emojify }}
             {% else %}
               <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
             {% endif %}
