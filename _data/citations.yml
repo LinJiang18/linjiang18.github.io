@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-04-20'
+  last_updated: '2026-05-11'
 papers:
   G66TbJYAAAAJ:9yKSN-GCB0IC:
     citations: 0
     title: 'Toward Multi-sided Fairness: A Fairness-Aware Order Dispatch System for Instant Delivery Service'
     year: '2022'
   G66TbJYAAAAJ:LkGwnXOMwfcC:
-    citations: 4
+    citations: 5
     title: 'GeoGen: A Two-stage Coarse-to-Fine Framework for Fine-grained Synthetic Location-based Social Network Trajectory Generation'
     year: '2025'
   G66TbJYAAAAJ:Se3iqnhoufwC:
@@ -14,7 +14,7 @@ papers:
     title: 'UrbanHuRo: A Two-Layer Human-Robot Collaboration Framework for the Joint Optimization of Heterogeneous Urban Services'
     year: '2026'
   G66TbJYAAAAJ:UeHWp8X0CEIC:
-    citations: 28
+    citations: 29
     title: 'Faircod: A fairness-aware concurrent dispatch system for large-scale instant delivery services'
     year: '2023'
   G66TbJYAAAAJ:UebtZRa9Y70C:
@@ -38,7 +38,7 @@ papers:
     title: Cross-corpus speech emotion recognition using joint distribution adaptive regression
     year: '2021'
   G66TbJYAAAAJ:roLk4NBRz8UC:
-    citations: 1
+    citations: 2
     title: 'HealthMamba: An Uncertainty-aware Spatiotemporal Graph State Space Model for Effective and Reliable Healthcare Facility Visit Prediction'
     year: '2026'
   G66TbJYAAAAJ:zYLM7Y9cAGgC:
