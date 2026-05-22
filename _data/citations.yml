@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-11'
+  last_updated: '2026-05-22'
 papers:
   G66TbJYAAAAJ:9yKSN-GCB0IC:
     citations: 0
@@ -18,7 +18,7 @@ papers:
     title: 'Faircod: A fairness-aware concurrent dispatch system for large-scale instant delivery services'
     year: '2023'
   G66TbJYAAAAJ:UebtZRa9Y70C:
-    citations: 0
+    citations: 1
     title: 'SynHAT: A Two-stage Coarse-to-Fine Diffusion Framework for Synthesizing Human Activity Traces'
     year: '2026'
   G66TbJYAAAAJ:WF5omc3nYNoC:
@@ -34,7 +34,7 @@ papers:
     title: 'UQGNN: Uncertainty Quantification of Graph Neural Networks for Multivariate Spatiotemporal Prediction'
     year: '2025'
   G66TbJYAAAAJ:qjMakFHDy7sC:
-    citations: 40
+    citations: 41
     title: Cross-corpus speech emotion recognition using joint distribution adaptive regression
     year: '2021'
   G66TbJYAAAAJ:roLk4NBRz8UC:
