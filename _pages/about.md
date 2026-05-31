@@ -14,6 +14,7 @@ profile:
   image_circular: true # crops the image to make it circular
   more_info: >
     <p><a href="mailto:lin.jiang@fsu.edu">lin.jiang@fsu.edu</a></p>
+    <p><strong>Motto:</strong> 日拱一卒<br>(Advance a little every day like a pawn in chess)</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
