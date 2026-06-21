@@ -431,7 +431,7 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-about-human-activity-trace-generation-is-accepted-by-acm-imwut-ubicomp-2026",
           title: 'Our paper about Human Activity Trace Generation is accepted by ACM IMWUT/UbiComp 2026....',
           description: "",
-          section: "News",},{id: "news-honored-to-receive-the-graduate-student-research-award-and-the-baker-scholarship-from-the-department-of-computer-science-at-florida-state-university-i-am-sincerely-grateful-for-the-support-and-recognition-from-my-advisor-and-the-department-link",
+          section: "News",},{id: "news-honored-to-receive-the-graduate-student-research-award-and-the-baker-scholarship-from-florida-state-university-link",
           title: 'Honored to receive the Graduate Student Research Award and the Baker Scholarship from...',
           description: "",
           section: "News",},{id: "news-our-paper-about-healthcare-poi-visitation-prediction-has-been-accepted-to-ijcai-2026-ai-and-health-track",
