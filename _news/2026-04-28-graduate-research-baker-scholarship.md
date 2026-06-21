@@ -7,7 +7,7 @@ related_posts: false
 excerpt_separator: <!--more-->
 ---
 
-Honored to receive the **Graduate Student Research Award** and the **Baker Scholarship** from the Department of Computer Science at Florida State University. I am sincerely grateful for the support and recognition from my advisor and the department. [link]({{ "/news/2026-04-28-graduate-research-baker-scholarship/" | relative_url }}).
+Honored to receive the **Graduate Student Research Award** and the **Baker Scholarship** from Florida State University. [link]({{ "/news/2026-04-28-graduate-research-baker-scholarship/" | relative_url }}).
 
 <!--more-->
 
