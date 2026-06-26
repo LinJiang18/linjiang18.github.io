@@ -1,12 +1,16 @@
 metadata:
-  last_updated: '2026-05-22'
+  last_updated: '2026-06-26'
 papers:
+  G66TbJYAAAAJ:0EnyYjriUFMC:
+    citations: 0
+    title: 'EnergyMamba: An Uncertainty-Aware Graph-Enhanced Selective State Space Model for Energy Consumption Prediction'
+    year: '2026'
   G66TbJYAAAAJ:9yKSN-GCB0IC:
     citations: 0
     title: 'Toward Multi-sided Fairness: A Fairness-Aware Order Dispatch System for Instant Delivery Service'
     year: '2022'
   G66TbJYAAAAJ:LkGwnXOMwfcC:
-    citations: 5
+    citations: 9
     title: 'GeoGen: A Two-stage Coarse-to-Fine Framework for Fine-grained Synthetic Location-based Social Network Trajectory Generation'
     year: '2025'
   G66TbJYAAAAJ:Se3iqnhoufwC:
@@ -14,34 +18,38 @@ papers:
     title: 'UrbanHuRo: A Two-Layer Human-Robot Collaboration Framework for the Joint Optimization of Heterogeneous Urban Services'
     year: '2026'
   G66TbJYAAAAJ:UeHWp8X0CEIC:
-    citations: 29
+    citations: 30
     title: 'Faircod: A fairness-aware concurrent dispatch system for large-scale instant delivery services'
     year: '2023'
   G66TbJYAAAAJ:UebtZRa9Y70C:
-    citations: 1
+    citations: 4
     title: 'SynHAT: A Two-stage Coarse-to-Fine Diffusion Framework for Synthesizing Human Activity Traces'
     year: '2026'
   G66TbJYAAAAJ:WF5omc3nYNoC:
-    citations: 3
+    citations: 4
     title: Uncertainty-aware Predict-Then-Optimize Framework for Equitable Post-Disaster Power Restoration
     year: '2025'
   G66TbJYAAAAJ:Y0pCki6q_DkC:
-    citations: 5
+    citations: 7
     title: 'HCRide: Harmonizing Passenger Fairness and Driver Preference for Human-Centered Ride-Hailing'
     year: '2025'
   G66TbJYAAAAJ:YsMSGLbcyi4C:
-    citations: 3
+    citations: 8
     title: 'UQGNN: Uncertainty Quantification of Graph Neural Networks for Multivariate Spatiotemporal Prediction'
     year: '2025'
+  G66TbJYAAAAJ:hqOjcs7Dif8C:
+    citations: 0
+    title: 'E4GEN: Event-level Explainable Extreme-Enhanced Time-series Generation'
+    year: '2026'
   G66TbJYAAAAJ:qjMakFHDy7sC:
     citations: 41
     title: Cross-corpus speech emotion recognition using joint distribution adaptive regression
     year: '2021'
   G66TbJYAAAAJ:roLk4NBRz8UC:
-    citations: 2
+    citations: 6
     title: 'HealthMamba: An Uncertainty-aware Spatiotemporal Graph State Space Model for Effective and Reliable Healthcare Facility Visit Prediction'
     year: '2026'
   G66TbJYAAAAJ:zYLM7Y9cAGgC:
-    citations: 6
+    citations: 8
     title: 'FairMove: A data-driven vehicle displacement system for jointly optimizing profit efficiency and fairness of electric for-hire vehicles'
     year: '2023'
