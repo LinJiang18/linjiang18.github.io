@@ -410,7 +410,7 @@ ninja.data = [{
           section: "News",},{id: "news-received-the-runner-up-award-for-research-presentation-at-the-cs-expo-2025-florida-state-university",
           title: 'Received the Runner-up Award for Research Presentation at the CS Expo 2025, Florida...',
           description: "",
-          section: "News",},{id: "news-thrilled-to-share-that-my-first-two-papers-at-fsu-have-been-accepted-to-ijcai-2025-a-good-start-to-my-ph-d-journey",
+          section: "News",},{id: "news-thrilled-to-share-that-my-first-two-papers-at-fsu-have-been-accepted-to-ijcai-2025-covering-human-centered-ride-hailing-and-ai-enabled-post-disaster-power-restoration-a-great-start-to-my-ph-d-journey",
           title: 'Thrilled to share that my first two papers at FSU have been accepted...',
           description: "",
           section: "News",},{id: "news-honored-to-receive-the-ijcai-25-travel-grant",
