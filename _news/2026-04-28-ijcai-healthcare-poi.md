@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper on **healthcare POI visitation prediction** has been accepted to *IJCAI 2026* (AI and Health Track).
+Our paper about **healthcare POI visitation prediction** has been accepted to *IJCAI 2026* (AI and Health Track).
