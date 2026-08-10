@@ -70,7 +70,11 @@ layout: default
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">{{ section_title }}</h3>
             <div>
-              {% if section_title == 'Working Experiences' or section_title == 'Experience' or section_title == 'Volunteer' or section_title == 'Academic Service' %}
+              {% if section_title == 'Working Experiences'
+                or section_title == 'Experience'
+                or section_title == 'Volunteer'
+                or section_title == 'Academic Service'
+              %}
                 {% assign entries = section_entries %}
                 {% include cv/experience.liquid %}
               {% elsif section_title == 'Education Experiences' or section_title == 'Education' %}

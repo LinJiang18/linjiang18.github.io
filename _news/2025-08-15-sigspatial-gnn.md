@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper about **Uncertainty Quantification of GNNs** is accepted by *ACM SIGSPATIAL 2025* (full research paper track).
+Our paper about **Uncertainty Quantification of GNNs** is accepted by _ACM SIGSPATIAL 2025_ (full research paper track).

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One paper about **Energy Consumption Prediction** has been accepted by *KDD 2026*.
+One paper about **Energy Consumption Prediction** has been accepted by _KDD 2026_.

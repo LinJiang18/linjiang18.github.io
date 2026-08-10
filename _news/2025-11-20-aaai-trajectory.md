@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper about **Trajectory Generation with Diffusion Models** is accepted by *AAAI 2026*.
+Our paper about **Trajectory Generation with Diffusion Models** is accepted by _AAAI 2026_.

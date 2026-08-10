@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper on a **Data-driven Vehicle Displacement System** was accepted to *IEEE Transactions on Mobile Computing (TMC)*.
+Our paper on a **Data-driven Vehicle Displacement System** was accepted to _IEEE Transactions on Mobile Computing (TMC)_.

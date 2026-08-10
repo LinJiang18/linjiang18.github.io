@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Received the **Runner-up Award** for Research Presentation at the *CS Expo 2025*, Florida State University.
+Received the **Runner-up Award** for Research Presentation at the _CS Expo 2025_, Florida State University.
