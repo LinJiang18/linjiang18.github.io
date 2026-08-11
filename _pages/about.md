@@ -32,4 +32,4 @@ I am a Ph.D. candidate in the [Department of Computer Science](https://www.cs.fs
 
 My research interests lie in generative AI, diffusion models, trustworthy decision-making and cyber-physical systems. Currently, I study **diffusion-based time-series generation** from multiple perspectives, including fidelity, diversity, efficiency, and scalability. Within this area, I am especially interested in extreme-aware generation. I have received the **Dean's Award for Doctoral Excellence** and the **Graduate Student Research Award** from Florida State University, as well as **travel grants** to attend IJCAI, SDM, and KDD. I welcome conversations and collaborations, including directions beyond my present projects.
 
-My publications are listed on the [Publications](/publications/) page and on [Google Scholar](https://scholar.google.com/citations?user=G66TbJYAAAAJ&hl=zh-CN).
+My publications are listed on the [Publications](/publications/) page and on [Google Scholar](https://scholar.google.com/citations?user=G66TbJYAAAAJ).
