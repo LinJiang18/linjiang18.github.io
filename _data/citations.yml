@@ -1,9 +1,13 @@
 metadata:
-  last_updated: '2026-07-22'
+  last_updated: '2026-08-12'
 papers:
   G66TbJYAAAAJ:0EnyYjriUFMC:
-    citations: 1
+    citations: 2
     title: 'EnergyMamba: An Uncertainty-Aware Graph-Enhanced Selective State Space Model for Energy Consumption Prediction'
+    year: '2026'
+  G66TbJYAAAAJ:3fE2CSJIrl8C:
+    citations: 0
+    title: 'TrAC: Trace-Conditioned Answer Consistency for Efficient Uncertainty Quantification in LLMs'
     year: '2026'
   G66TbJYAAAAJ:8k81kl-MbHgC:
     citations: 1
@@ -13,20 +17,28 @@ papers:
     citations: 0
     title: 'Toward Multi-sided Fairness: A Fairness-Aware Order Dispatch System for Instant Delivery Service'
     year: '2022'
+  G66TbJYAAAAJ:KlAtU1dfN6UC:
+    citations: 0
+    title: 'SynEnergy: Anomaly Semantic-Guided Diffusion for Synthetic Energy Data Generation'
+    year: '2026'
   G66TbJYAAAAJ:LkGwnXOMwfcC:
-    citations: 11
+    citations: 13
     title: 'GeoGen: A Two-stage Coarse-to-Fine Framework for Fine-grained Synthetic Location-based Social Network Trajectory Generation'
     year: '2025'
+  G66TbJYAAAAJ:MXK_kJrjxJIC:
+    citations: 0
+    title: 'SymboUQ: Symbolic Uncertainty Quantification for Spatial Reasoning in LLMs'
+    year: '2026'
   G66TbJYAAAAJ:Se3iqnhoufwC:
     citations: 0
     title: 'UrbanHuRo: A Two-Layer Human-Robot Collaboration Framework for the Joint Optimization of Heterogeneous Urban Services'
     year: '2026'
   G66TbJYAAAAJ:UeHWp8X0CEIC:
-    citations: 30
+    citations: 31
     title: 'Faircod: A fairness-aware concurrent dispatch system for large-scale instant delivery services'
     year: '2023'
   G66TbJYAAAAJ:UebtZRa9Y70C:
-    citations: 5
+    citations: 6
     title: 'SynHAT: A Two-stage Coarse-to-Fine Diffusion Framework for Synthesizing Human Activity Traces'
     year: '2026'
   G66TbJYAAAAJ:WF5omc3nYNoC:
@@ -38,11 +50,11 @@ papers:
     title: 'HCRide: Harmonizing Passenger Fairness and Driver Preference for Human-Centered Ride-Hailing'
     year: '2025'
   G66TbJYAAAAJ:YsMSGLbcyi4C:
-    citations: 11
+    citations: 12
     title: 'UQGNN: Uncertainty Quantification of Graph Neural Networks for Multivariate Spatiotemporal Prediction'
     year: '2025'
   G66TbJYAAAAJ:hqOjcs7Dif8C:
-    citations: 0
+    citations: 1
     title: 'E4GEN: Event-level Explainable Extreme-Enhanced Time-series Generation'
     year: '2026'
   G66TbJYAAAAJ:qjMakFHDy7sC:
