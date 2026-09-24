@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One paper about **Energy Consumption Prediction** has been accepted by _KDD 2026_.
+One paper **EnergyMamba** about **Energy Consumption Prediction** has been accepted by _KDD 2026_.

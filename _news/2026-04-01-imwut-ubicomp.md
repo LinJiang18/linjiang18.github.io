@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper about **Human Activity Trace Generation** is accepted by _ACM IMWUT/UbiComp 2026_.
+Our paper **SynHAT** about **Human Activity Trace Generation** is accepted by _ACM IMWUT/UbiComp 2026_.
