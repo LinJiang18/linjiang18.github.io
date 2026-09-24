@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Thrilled to share that **my first two papers** at FSU have been accepted to **IJCAI 2025**: **HCRide**, about **human-centered ride-hailing**, and another paper about **AI-enabled post-disaster power restoration**. A great start to my Ph.D. journey!
+Thrilled to share that **my first two papers** at FSU have been accepted to **IJCAI 2025**: **HCRide**, about **human-centered ride-hailing**, and **EPOPR**, about **AI-enabled post-disaster power restoration**. A great start to my Ph.D. journey!
