@@ -2,40 +2,29 @@ source 'https://rubygems.org'
 
 gem 'jekyll'
 
-# Core plugins that directly affect site building
+# Jekyll plugins that affect the build
 group :jekyll_plugins do
-    gem 'jekyll-3rd-party-libraries'
-    gem 'jekyll-archives-v2'
-    gem 'jekyll-cache-bust'
-    gem 'jekyll-email-protect'
-    gem 'jekyll-feed'
-    gem 'jekyll-get-json'
-    gem 'jekyll-imagemagick'
-    gem 'jekyll-jupyter-notebook'
-    gem 'jekyll-link-attributes'
-    gem 'jekyll-minifier'
-    gem 'jekyll-paginate-v2'
+    gem 'jekyll-3rd-party-libraries' # CDN libraries the theme pulls in
+    gem 'jekyll-cache-bust'          # ?v=hash on assets
+    gem 'jekyll-email-protect'       # `encode_email`, called by al_search's search-data template
+    gem 'jekyll-imagemagick'         # responsive webp variants
+    gem 'jekyll-link-attributes'     # rel/target on external links
+    gem 'jekyll-minifier'            # minifies the built HTML/CSS/JS
     gem 'jekyll-regex-replace'
-    gem 'jekyll-scholar'
-    gem 'jekyll-sitemap'
-    gem 'jekyll-socials'
-    gem 'jekyll-tabs'
-    gem 'jekyll-terser', :git => "https://github.com/RobertoJBeltran/jekyll-terser.git"
-    gem 'jekyll-toc'
-    gem 'jekyll-twitter-plugin'
-    gem 'jemoji'
-
-    gem 'classifier-reborn'  # used for content categorization during the build
+    gem 'jekyll-scholar'             # renders _bibliography/papers.bib
+    gem 'jekyll-sitemap'             # /sitemap.xml
+    gem 'jekyll-socials'             # the {% social_links %} tag
+    gem 'jekyll-toc'                 # the post layout calls {% toc %} unconditionally
+    gem 'jekyll-terser', :git => 'https://github.com/RobertoJBeltran/jekyll-terser.git'
+    gem 'jemoji'                     # `emojify`, called by news.liquid
 end
 
-# Gems for development or external data fetching (outside :jekyll_plugins)
-group :other_plugins do
-    gem 'css_parser'
-    gem 'feedjira'
-    gem 'httparty'
-    gem 'observer'       # used by jekyll-scholar
-    gem 'ostruct'        # used by jekyll-twitter-plugin
-    # gem 'terser'         # used by jekyll-terser
-    # gem 'unicode_utils' -- should be already installed by jekyll
-    # gem 'webrick' -- should be already installed by jekyll
+# al-folio theme runtime (versions pinned; upgrade with `bundle update`)
+group :al_folio_plugins do
+    gem 'al_folio_core', '= 1.0.15' # layouts, includes, styles
+    gem 'al_icons', '= 1.0.0'       # icon sets
+    gem 'al_folio_cv', '= 1.0.2'    # the /cv/ page from _data/cv.yml
+    gem 'al_citations', '= 1.0.1'   # selected_papers.liquid calls its tag unconditionally
+    gem 'al_img_tools', '= 1.0.3' # image zoom / lightbox
+    gem 'al_search', '= 1.0.3'    # the navbar search box
 end

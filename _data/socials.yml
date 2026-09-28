@@ -1,9 +1,11 @@
-# Social icons (order = display order). Plugin: https://github.com/george-gca/jekyll-socials
-# Resolved URLs (for reference):
-#   GitHub:   https://github.com/LinJiang18
-#   Scholar:  https://scholar.google.com/citations?user=G66TbJYAAAAJ (hl added by Google when visiting)
-#   LinkedIn: https://www.linkedin.com/in/lin-jiang-42769a23b/
-email: lin.jiang@fsu.edu
-scholar_userid: G66TbJYAAAAJ
-github_username: LinJiang18
-linkedin_username: lin-jiang-42769a23b
+# Social media links and usernames, displayed in the order defined here. See the jekyll-socials plugin docs: https://github.com/george-gca/jekyll-socials
+email: lin.jiang@fsu.edu # your email address
+scholar_userid: G66TbJYAAAAJ # your Google Scholar ID (the `user=` value in the profile URL)
+dblp_url: https://dblp.org/pid/03/7067-7.html # DBLP author page ("Lin Jiang 0007"; DBLP has several authors by this name)
+research_gate_profile: Lin-Jiang-91 # the part after /profile/ -> https://www.researchgate.net/profile/Lin-Jiang-91/
+orcid_id: 0009-0003-5770-3161 # your ORCID iD
+github_username: LinJiang18 # your GitHub username
+linkedin_username: lin-jiang-42769a23b # your LinkedIn handle
+# cv_pdf: /assets/pdf/<file>.pdf -- add once there is a CV PDF in assets/pdf/ (also set `cv_pdf` in _pages/cv.md)
+# semanticscholar_id: # Semantic Scholar author ID
+# rss_icon: -- keep this commented out, not `false`: jekyll-socials renders every key that is present, whatever its value.

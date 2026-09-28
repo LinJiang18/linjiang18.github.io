@@ -1,63 +1,50 @@
+# The Experience page (_pages/cv.md, /experience/). Rendered by that page's own Liquid, not by the al_folio_cv plugin's layout, so the entries use this site's own compact format:
+#   - title + year  -> an award: title on the left (markdown, `**bold**` works), year right-aligned
+#   - line          -> one bullet (markdown)
+# Sections render as cards in the order written here. Talks and academic service live on the Activities page (_pages/activities.html).
 cv:
   name: Lin Jiang
   label: Ph.D. Candidate in Computer Science
   email: lin.jiang@fsu.edu
-  location: Florida State University, Tallahassee, FL
-  image: ""
-  summary: ""
-
-  social_networks: []
+  location: Tallahassee, FL, USA
 
   sections:
     Awards:
       - title: "**Dean's Award for Doctoral Excellence, FSU**"
-        year: "2026"
+        year: 2026
       - title: "**Naaman Franklin Faile Jr. Graduate Fellowship, FSU** ($3,000/year for 3 years)"
-        year: "2026"
+        year: 2026
       - title: "**Graduate Student Research Award, FSU**"
-        year: "2026"
+        year: 2026
       - title: "**Ted and Syauchen Baker Scholarship, FSU** ($1,000)"
-        year: "2026"
+        year: 2026
       - title: "Travel Grant, IJCAI'25"
-        year: "2025"
+        year: 2025
       - title: "FSU GSRC Travel Grant"
-        year: "2025"
+        year: 2025
       - title: "FSU COGS Travel Grant"
-        year: "2025"
+        year: 2025
       - title: "FSU CS Student Conference Travel Award"
-        year: "2025"
+        year: 2025
       - title: "Research Presentation Award Runner-up at CS Expo, FSU"
-        year: "2025"
+        year: 2025
       - title: "Travel Grant, SDM'24 Doctoral Forum"
-        year: "2024"
+        year: 2024
       - title: "Travel Grant, KDD'23"
-        year: "2023"
+        year: 2023
       - title: "**Honored Graduate of Southeast University**"
-        year: "2020"
+        year: 2020
       - title: "Outstanding Undergraduate Thesis Award"
-        year: "2020"
+        year: 2020
       - title: "Honorable Mention in the Mathematical Contest in Modeling (MCM)"
-        year: "2019"
+        year: 2019
       - title: "Merit Student Scholarship"
-        year: "2017"
+        year: 2017
+
     Working Experiences:
       - line: "**Research Intern**, 2021-07 ~ 2023-06, Data and AI Lab, JD Logistics"
+
     Education Experiences:
       - line: "**Ph.D. in Computer Science**, 2023.09 ~ Current, Florida State University"
       - line: "**Master in Cyber Science**, 2020.09 ~ 2023.06, Southeast University"
       - line: "**Bachelor in Information Engineering**, 2016.09 ~ 2020.09, Southeast University"
-    Academic Service:
-      - line: "**NIPS** 2026"
-      - line: "**ICLR** 2026"
-      - line: "**AAAI** 2025, 2026, 2027"
-      - line: "**IJCAI** 2025, 2026, 2027"
-      - line: "**ACM IMWUT** 2025, 2026"
-      - line: "**KDD** 2023, 2024, 2025, 2026, 2027"
-      - line: "**WWW** 2025"
-      - line: "**ICDE** 2026"
-      - line: "**CIKM** 2024"
-      - line: "IEEE Transactions on Pattern Analysis and Machine Intelligence"
-      - line: "IEEE Transactions on Big Data"
-      - line: "ACM Transactions on Multimedia Computing, Communications, and Applications"
-      - line: "CAAI Transactions on Intelligence Technology"
-      - line: "Urban Computation Science"

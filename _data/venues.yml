@@ -1,9 +1,76 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+# Colors and links for the `abbr` badge on each bibliography entry, plus the venue's ratings shown under it (_layouts/bib.liquid).
+#
+#   ccf:  CCF rank, keyed by the edition of the CCF list (2022 = 6th, 2026 = 7th, released 2026-03-31), newest first. A paper takes the newest edition not newer than its `year`, so IJCAI 2025 is A and IJCAI 2026 is B. Sources: https://www.ccf.org.cn/Academic_Evaluation/By_category/ (still the 2022 list) and the official 7th-edition PDF.
+#   core: ICORE2026 rank -- always the latest edition, whatever the paper's year (https://portal.core.edu.au/conf-ranks/). Leave it out where ICORE gives no rank (journals, "journal published", "Multiconference", unlisted); nothing is shown then.
+"NeurIPS":
+  url: https://neurips.cc/
+  color: "#3b4cca"
+  ccf: {2026: A, 2022: A}
+  core: "A*"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"AAAI":
+  url: https://aaai.org/conference/aaai/
+  color: "#1f6feb"
+  ccf: {2026: A, 2022: A}
+  core: "A*"
 
-"Vision":
-  color: "#009f36"
+"IJCAI":
+  url: https://www.ijcai.org/
+  color: "#0b7285"
+  ccf: {2026: B, 2022: A} # 7th edition: A -> B
+  core: "A*"
+
+"KDD":
+  url: https://kdd.org/
+  color: "#b8500a"
+  ccf: {2026: A, 2022: A}
+  core: "A*"
+
+"SIGSPATIAL":
+  url: https://sigspatial.acm.org/
+  color: "#2f7a3f"
+  ccf: {2026: C, 2022: C}
+  core: "A"
+
+"CIKM":
+  url: https://dl.acm.org/conference/cikm
+  color: "#c2255c"
+  ccf: {2026: B, 2022: B}
+  core: "A"
+
+"IMWUT/UbiComp": # IMWUT papers are presented at UbiComp
+  url: https://dl.acm.org/journal/imwut
+  color: "#8250df"
+  ccf: {2026: A, 2022: A} # listed as UbiComp/IMWUT (2022), UbiComp (2026)
+
+"ICRA":
+  url: https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra
+  color: "#00629b"
+  ccf: {2026: B, 2022: B}
+  core: "A*"
+
+"SDM":
+  url: https://www.siam.org/conferences-events/siam-conferences/sdm/
+  color: "#a4401a"
+  ccf: {2026: B, 2022: B}
+  core: "A"
+
+"TMC":
+  url: https://www.computer.org/csdl/journal/tm
+  color: "#5f4b8b"
+  ccf: {2026: A, 2022: A} # journal; ICORE ranks conferences only
+
+"WASA":
+  url: https://link.springer.com/conference/wasa
+  color: "#4d6b2f"
+  ccf: {2026: C, 2022: C} # not in ICORE
+
+"ICASSP":
+  url: https://signalprocessingsociety.org/our-story/meetings-events/icassp
+  color: "#9b2c6f"
+  ccf: {2026: B, 2022: B} # ICORE2026: Multiconference, unranked
+
+# Not a venue, but the same badge slot: every entry without a DOI is on arXiv, and `note` carries the status line ("Submitted to AAAI 2027."). The old grey was #9aa1a9, which put white badge text at 2.6:1 -- the only colour here below the ~5:1 the others sit at, and it read as a disabled badge.
+"arXiv":
+  url: https://arxiv.org/
+  color: "#556680"

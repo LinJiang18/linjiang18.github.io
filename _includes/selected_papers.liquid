@@ -1,3 +1,7 @@
+{% comment %}
+  Local change: the gem lists `selected={true}` entries in papers.bib file order, and /publications/ uses that same file order within each year, so one file cannot give both pages the order they need. Pick the home page's papers here instead, in display order: `nocite` marks them cited without printing anything, and `--cited_in_order` renders exactly those, in this order.
+{% endcomment %}
+{% nocite jiang2026e4gen jiang2025hcriede jiang2025upro jiang2023faircod jiang2026urbanhuro %}
 <div class="publications">
   {% bibliography --group_by none --cited_in_order %}
 </div>

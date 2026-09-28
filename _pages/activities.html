@@ -1,0 +1,119 @@
+---
+layout: page
+title: Activities
+permalink: /activities/
+description: Invited talks, academic service, and the people I work with.
+nav: true
+nav_order: 4
+---
+
+<style>
+  /* Local to this page. Colours come from the theme's variables, so light and dark mode follow the rest of the site. */
+  .activities-page {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+  .activities-page p,
+  .activities-page ul {
+    margin-bottom: 0;
+  }
+  .activities-heading {
+    font-size: 1.35rem;
+    color: var(--global-text-color);
+    letter-spacing: 0.02em;
+    margin-bottom: 0.5rem !important;
+  }
+  .activities-subheading {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--global-text-color);
+    margin-bottom: 0.35rem !important;
+  }
+  .activities-panel {
+    background-color: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.35rem;
+    padding: 1rem 1rem 0.85rem;
+  }
+  .activities-list {
+    padding-left: 1.25rem;
+    color: var(--global-text-color);
+  }
+  .activities-list li + li {
+    margin-top: 0.5rem;
+  }
+  /* The talks stay one line each; on a narrow screen the panel scrolls sideways instead of wrapping. */
+  .activities-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.35rem;
+  }
+  .activities-scroll .activities-list {
+    width: max-content;
+  }
+  .activities-scroll .activities-list li {
+    white-space: nowrap;
+  }
+</style>
+
+<div class="activities-page">
+  <section>
+    <h2 class="activities-heading">Invited Talks &amp; Presentations</h2>
+    <div class="activities-panel">
+      <div class="activities-scroll">
+        <ul class="activities-list">
+          <li>
+            <strong>[2026/04]</strong> Presentation at <em>CS Expo 2026</em>, Florida State University:
+            <em>Event-Level Explainable Extreme-Enhanced Time Series Generation</em>.
+          </li>
+          <li>
+            <strong>[2025/08]</strong> Oral presentation at <em>IJCAI 2025</em>, covering <em>Human-Centered Ride-Hailing</em> and
+            <em>Equitable Post-Disaster Power Restoration</em>.
+          </li>
+          <li>
+            <strong>[2025/04]</strong> Presentation at <em>CS Expo 2025</em>, Florida State University:
+            <em>An Uncertainty-Aware Predict-Then-Optimize Framework for Equitable Post-Disaster Power Restoration</em>.
+          </li>
+          <li>
+            <strong>[2023/08]</strong> Oral presentation at <em>KDD 2023</em>:
+            <em>A Fairness-Aware Concurrent Dispatch System for Large-Scale Instant Delivery Services</em>.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="activities-heading">Academic Service</h2>
+    <div class="activities-panel">
+      <p class="activities-subheading">Reviewer/Program Committee</p>
+      <ul class="activities-list">
+        <li><strong>NeurIPS</strong> 2026</li>
+        <li><strong>ICLR</strong> 2026, 2027</li>
+        <li><strong>AAAI</strong> 2025, 2026, 2027</li>
+        <li><strong>IJCAI</strong> 2025, 2026, 2027</li>
+        <li><strong>KDD</strong> 2023, 2024, 2025, 2026, 2027</li>
+        <li><strong>WWW</strong> 2025</li>
+        <li><strong>ICDE</strong> 2026</li>
+        <li><strong>CIKM</strong> 2024</li>
+        <li><strong>ACM IMWUT/UbiComp</strong> 2025, 2026</li>
+        <li>IEEE Transactions on Pattern Analysis and Machine Intelligence</li>
+        <li>IEEE Transactions on Big Data</li>
+        <li>ACM Transactions on Multimedia Computing, Communications, and Applications</li>
+        <li>CAAI Transactions on Intelligence Technology</li>
+        <li>Urban Computation Science</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="activities-heading">Friends I am very lucky to work with:</h2>
+    <div class="activities-panel">
+      <ul class="activities-list">
+        <li><strong><a href="https://ufodestiny.github.io/">Dahai Yu</a></strong>, Florida State University</li>
+        <li><strong>Rongchao Xu</strong>, Florida State University</li>
+      </ul>
+    </div>
+  </section>
+</div>

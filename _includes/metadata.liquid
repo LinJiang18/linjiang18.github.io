@@ -35,10 +35,19 @@
       {{ page.title }} | {{ title }}
     {% endif %}
   {% else %}
-    {{ title }}
+    {% comment %}
+      Local change: on the site root the gem emits the bare name. A search for "lin jiang fsu" has nothing to match in that, so append `tagline` from _config.yml when it is set. Other pages keep the gem's "Page | Name".
+    {% endcomment %}
+    {% if site.tagline %}{{ title }} — {{ site.tagline }}{% else %}{{ title }}{% endif %}
   {% endif %}
 </title>
 <meta name="author" content="{{ author_name }}">
+{% comment %}
+  Local addition: Google Search Console's site-verification tag. The token belongs to one property + one verification method, so this is specifically the token from a **URL prefix** property (https://linjiang18.github.io/) verified by "HTML tag". A "Domain" property cannot be used here at all: it only verifies by DNS TXT, and the DNS for github.io is GitHub's, not ours. Set `google_site_verification` in _config.yml; with the key absent this emits nothing.
+{% endcomment %}
+{% if site.google_site_verification %}
+  <meta name="google-site-verification" content="{{ site.google_site_verification }}">
+{% endif %}
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 {% if page.keywords or site.keywords %}
   <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
@@ -59,22 +68,20 @@
   <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url | remove_first: 'index.html' }}">
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   {% if page.og_image or site.og_image %}
-    <meta property="og:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}">
+    {% assign og_image_source = page.og_image | default: site.og_image %}
+    {% if og_image_source contains '://' %}
+      {% assign og_image_url = og_image_source %}
+    {% else %}
+      {% assign og_image_url = og_image_source | prepend: site.baseurl | prepend: site.url %}
+    {% endif %}
+    <meta property="og:image" content="{{ og_image_url }}">
   {% endif %}
   <meta property="og:locale" content="{{ site.lang }}">
-
-  <!-- Twitter card -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ title }}{% endif %}">
-  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  {% if page.og_image or site.og_image %}
-    <meta name="twitter:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}">
-  {% endif %}
-  {% if site.x_username %}
-    <meta name="twitter:site" content="@{{ site.x_username }}">
-    <meta name="twitter:creator" content="@{{ site.x_username }}">
-  {% endif %}
 {% endif %}
+
+{% comment %}
+  Local change: the gem emits a "Twitter card" block right here — twitter:card, twitter:title, twitter:description unconditionally, plus twitter:image and twitter:site/creator when `og_image` / `x_username` are set. This site carries no X/Twitter presence, so the whole block is removed rather than left half-filled. Every consumer that mattered falls back to the OpenGraph tags above. Keep it deleted when updating the theme; `x_username` is also absent from _data/socials.yml, which is what keeps the icon and the search entry away.
+{% endcomment %}
 
 {% if site.serve_schema_org %}
   <!-- Schema.org -->
@@ -212,9 +219,9 @@
       {% when 'work_url' %}
         {% capture link %}{{ social[1] }}{% endcapture %}
         {% assign sameaslinks = sameaslinks | push: link %}
-      {% when 'x_username' %}
-        {% capture link %}https://twitter.com/{{ social[1] }}{% endcapture %}
-        {% assign sameaslinks = sameaslinks | push: link %}
+      {% comment %}
+        Local change: the gem's `x_username` case, which pushed a twitter.com URL into the schema.org sameAs list, is removed along with the Twitter card above.
+      {% endcomment %}
       {% when 'youtube_id' %}
         {% capture link %}https://youtube.com/@{{ social[1] }}{% endcapture %}
         {% assign sameaslinks = sameaslinks | push: link %}
@@ -222,7 +229,12 @@
         {% capture link %}https://www.zotero.org/{{ social[1] }}{% endcapture %}
         {% assign sameaslinks = sameaslinks | push: link %}
       {% else %}
-        {% assign sameaslinks = sameaslinks | push: social[1].url %}
+        {% comment %}
+          Local change: the gem pushes `social[1].url` unguarded, so any key it has no case for and that is a plain string -- `cv_pdf` here -- pushed a nil and the rendered sameAs array started with a literal `null`.
+        {% endcomment %}
+        {% if social[1].url %}
+          {% assign sameaslinks = sameaslinks | push: social[1].url %}
+        {% endif %}
     {% endcase %}
   {% endfor %}
 
@@ -235,7 +247,15 @@
         },
         "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
         "@type": "{% if is_blog_post %}BlogPosting{% else %}WebSite{% endif %}",
-        "description": "{% if page.description %}{{ page.description }}{% else if site.description %}{{ site.description }}{% endif %}",
+        {% comment %}
+          Local change: `site.description` is a folded YAML scalar, so it ends in a newline, and the gem interpolated it raw between quotes -- a literal line break inside a JSON string, which makes the whole block invalid JSON-LD and silently unusable. Hand the value to `jsonify` instead, which quotes and escapes it; `strip_html` is there because a page `description` may contain a link (/publications/ does). The gem also wrote `{% raw %}{% else if %}{% endraw %}`, which Liquid parses as a plain `else` -- harmless, but it is why this only ever used `site.description`.
+        {% endcomment %}
+        {%- if page.description -%}
+          {%- assign schema_description = page.description -%}
+        {%- else -%}
+          {%- assign schema_description = site.description -%}
+        {%- endif -%}
+        "description": {{ schema_description | strip_html | strip_newlines | strip | jsonify }},
         "headline": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
         {% if sameaslinks != blank %}
         "sameAs": {{ sameaslinks | jsonify }},
@@ -244,4 +264,44 @@
         "@context": "https://schema.org"
     }
   </script>
+
+  {% comment %}
+    Local addition: the block above describes the *page* (`WebSite`), with the person only as a bare `author` name. That is too thin to tie this site to the Lin Jiang who is at FSU and on Scholar / GitHub / LinkedIn. On the site root, emit a ProfilePage whose mainEntity is a full Person -- affiliation, alumniOf, image, and the same sameAs list -- which is the pairing Google documents for a personal profile page. Driven by `person:` in _config.yml.
+  {% endcomment %}
+  {% if page.url == '/' and site.person %}
+    <script type="application/ld+json">
+      {
+          "@context": "https://schema.org",
+          "@type": "ProfilePage",
+          "mainEntity": {
+              "@type": "Person",
+              "name": "{{ author_name }}",
+              "givenName": "{{ site.first_name }}",
+              "familyName": "{{ site.last_name }}",
+              "jobTitle": "{{ site.person.job_title }}",
+              "description": {{ site.description | strip_html | strip_newlines | strip | jsonify }},
+              "url": "{{ site.url }}{{ site.baseurl }}/",
+              "image": "{{ site.og_image | prepend: site.baseurl | prepend: site.url }}",
+              {% if site.data.socials.email %}"email": "mailto:{{ site.data.socials.email }}",{% endif %}
+              "affiliation": {
+                  "@type": "CollegeOrUniversity",
+                  "name": "{{ site.person.affiliation }}",
+                  "url": "{{ site.person.affiliation_url }}"
+              },
+              "worksFor": {
+                  "@type": "CollegeOrUniversity",
+                  "name": "{{ site.person.affiliation }}",
+                  "url": "{{ site.person.affiliation_url }}"
+              },
+              "alumniOf": {
+                  "@type": "CollegeOrUniversity",
+                  "name": "{{ site.person.alumni_of }}",
+                  "url": "{{ site.person.alumni_of_url }}"
+              },
+              {% if sameaslinks != blank %}"sameAs": {{ sameaslinks | jsonify }},{% endif %}
+              "knowsAbout": {{ site.person.knows_about | jsonify }}
+          }
+      }
+    </script>
+  {% endif %}
 {% endif %}
