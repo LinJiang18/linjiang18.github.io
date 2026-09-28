@@ -32,7 +32,7 @@ person:
     - cyber-physical systems
 
 # Google Search Console verification, rendered as a <meta> by _includes/metadata.liquid; with the key absent nothing is emitted. To set it up: add a **URL prefix** property for https://linjiang18.github.io/ in Search Console, choose "HTML tag" verification, and put its token here (quote it if it starts with a dash). A "Domain" property won't work -- it verifies only by a DNS TXT record on github.io, which GitHub owns. Verification is what lets /sitemap.xml be submitted.
-# google_site_verification: ""
+google_site_verification: "0ssha1u5Y32CTM5zDAJT5LAPU09DtlGfCwHnNNneJx8" # from the URL-prefix property https://linjiang18.github.io/ (HTML tag method); removing it un-verifies the property
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.png # image in /assets/img/ (a string of 4 characters or fewer is treated as an emoji favicon)

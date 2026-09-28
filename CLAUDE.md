@@ -23,7 +23,7 @@ Looks removable, isn't:
 | `jekyll-email-protect` | `al_search` pipes the email through `encode_email`; without the gem Liquid drops the filter silently and the email ships as plaintext in the search index |
 | `al_folio.distill.source` | `al_folio_core` warns without it |
 | `enable_publication_thumbnails: true` | gates the whole left column of `bib.liquid`: venue badge *and* thumbnail |
-| `google_site_verification` (commented out until set up) | Once set, Search Console re-checks it; removing it un-verifies the property and drops the sitemap submission. Token must come from a **URL-prefix** property verified by **HTML tag** (a Domain property needs DNS on github.io, which we don't control) |
+| `google_site_verification` | Set 2026-09-28 for the URL-prefix property https://linjiang18.github.io/. Search Console re-checks it; removing it un-verifies the property and drops the sitemap submission. Token must come from a **URL-prefix** property verified by **HTML tag** (a Domain property needs DNS on github.io, which we don't control) |
 
 Deliberately off — to re-enable, restore every piece listed:
 
