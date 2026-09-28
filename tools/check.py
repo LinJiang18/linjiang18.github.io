@@ -318,6 +318,7 @@ def check_bibliography(config: dict, data: dict) -> None:
             warn(f"papers.bib:{number}: a field value continues onto this line -- keep each field on one line")
 
     check_about_anchors({e.key for e in entries})
+    check_about_order([e.key for e in entries])
     check_selected_papers({e.key for e in entries})
     check_publication_order(entries, data, config)
     check_coauthors(entries, data)
@@ -412,6 +413,20 @@ def check_selected_papers(keys: set[str]) -> None:
             error(f"{rel(path)}: `{key}` is not a citekey in papers.bib")
     for key in sorted({k for k in listed if listed.count(k) > 1}):
         warn(f"{rel(path)}: `{key}` is listed more than once")
+
+
+def check_about_order(order: list[str]) -> None:
+    """A parenthesised list of paper links in about.md, e.g. "(E4GEN, SynEHR, ...)", lists them in /publications/ order, i.e. papers.bib file order."""
+    about = read(ROOT / "_pages" / "about.md")
+    link = r"\[([^\]]+)\]\(/publications/#([A-Za-z0-9_:-]+)\)"
+    for group in re.findall(r"\(((?:" + link + r")(?:, " + link + r")*)\)", about):
+        items = re.findall(link, group[0])
+        if any(key not in order for _, key in items):
+            continue  # an unknown key is check_about_anchors' error
+        expected = sorted(items, key=lambda item: order.index(item[1]))
+        if expected != items:
+            error(f"_pages/about.md: ({', '.join(n for n, _ in items)}) should follow the "
+                  f"/publications/ order: ({', '.join(n for n, _ in expected)})")
 
 
 def check_coauthors(entries: list[Entry], data: dict) -> None:
