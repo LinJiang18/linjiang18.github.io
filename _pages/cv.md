@@ -8,7 +8,7 @@ description: Awards, work, and education.
 ---
 
 {% comment %}
-  Rendered here rather than by the al_folio_cv plugin's `cv` layout: that layout's fixed date-badge rows are not the look this site wants. Each section of _data/cv.yml becomes a card; an entry with `year` is an award (title left, year right), an entry with `line` is a plain bullet. See the header of _data/cv.yml.
+  Rendered here, not by a CV plugin: the al_folio_cv plugin's fixed date-badge rows were not the look this site wants, so it was removed. Each section of _data/cv.yml becomes a card; an entry with `year` is an award (title left, year right), an entry with `line` is a plain bullet. See the header of _data/cv.yml.
 {% endcomment %}
 
 <style>

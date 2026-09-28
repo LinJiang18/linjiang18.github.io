@@ -1,4 +1,4 @@
-# The Experience page (_pages/cv.md, /experience/). Rendered by that page's own Liquid, not by the al_folio_cv plugin's layout, so the entries use this site's own compact format:
+# The Experience page (_pages/cv.md, /experience/). Rendered by that page's own Liquid (the al_folio_cv plugin is not used), so the entries use this site's own compact format:
 #   - title + year  -> an award: title on the left (markdown, `**bold**` works), year right-aligned
 #   - line          -> one bullet (markdown)
 # Sections render as cards in the order written here. Talks and academic service live on the Activities page (_pages/activities.html).

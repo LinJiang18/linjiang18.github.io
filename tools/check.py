@@ -505,7 +505,7 @@ def check_workflows() -> None:
 
 
 def check_local_overrides() -> None:
-    """The ten local files exist and each says what is local about it.
+    """The eleven local files exist and each says what is local about it.
 
     That marker is the whole upgrade story: without it, a later reader cannot tell our edit from the gem's own lines.
     """
@@ -519,6 +519,7 @@ def check_local_overrides() -> None:
         "_sass/_footer.scss",
         "_sass/_local.scss",
         "assets/css/main.scss",
+        "assets/js/theme.js",
     ]
     # Wholly ours, so there is nothing local to mark -- only their presence is checked, because CLAUDE.md documents each one.
     own_files = [

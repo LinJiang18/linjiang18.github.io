@@ -58,9 +58,6 @@ al_folio:
   distill:
     engine: distillpub-template
     source: al-org-dev/distill-template#al-folio
-  features:
-    cv:
-      enabled: true
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -124,6 +121,7 @@ exclude:
   - README.md
   - tools # tools/check.py is a dev script; without this it is published at /tools/
   - paper # local PDFs used to crop publication thumbnails; some are paywalled, never publish them
+  - UFOdestiny.github.io # untracked local copy of the site this layout came from; a local build would otherwise build its pages too
 
 # Theme assets no page can request are pruned in _plugins/prune_theme_assets.rb, not here: `exclude` never sees them, because Jekyll's theme-assets reader walks the gem's assets/ directory without consulting it.
 
@@ -150,7 +148,6 @@ plugins:
   # al-folio plugins
   - al_folio_core
   - al_icons
-  - al_folio_cv
   - al_citations
   - al_img_tools
   - al_search

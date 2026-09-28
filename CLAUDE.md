@@ -32,9 +32,9 @@ Deliberately off — to re-enable, restore every piece listed:
 - **RSS**: `jekyll-feed` in both lists + uncomment `rss_icon` in `_data/socials.yml`.
 - **X/Twitter**: removed from `metadata.liquid` and `socials.yml`; no X presence.
 
-## The ten local theme files
+## The eleven local theme files
 
-Each gem copy keeps the gem's code verbatim apart from edits marked `Local change:` (only its comments were reflowed to one line per paragraph), so a theme upgrade stays diffable. Prefer `_config.yml` or content over adding an eleventh.
+Each gem copy keeps the gem's code verbatim apart from edits marked `Local change:` (only its comments were reflowed to one line per paragraph), so a theme upgrade stays diffable. Prefer `_config.yml` or content over adding a twelfth.
 
 - `_includes/metadata.liquid` — appends `tagline` to the home `<title>`; renders `google_site_verification`; drops the Twitter card and `x_username` sameAs case; guards the gem's `null` in `sameAs`; fixes invalid JSON-LD `description`; emits a schema.org `ProfilePage`/`Person` (from `person:` in `_config.yml`) on `/` only.
 - `_includes/news.liquid` — inline news show `item.excerpt` instead of the whole `item.content`, so anything after an `excerpt_separator` (e.g. certificate images) stays on the item's own page instead of blowing up the news table's width.
@@ -42,6 +42,7 @@ Each gem copy keeps the gem's code verbatim apart from edits marked `Local chang
 - `_layouts/bib.liquid` — one addition under the venue badge: CCF / CORE rank pills from `ccf` / `core` in `_data/venues.yml` (CCF keyed by list edition, the entry takes the newest edition not newer than its year; CORE is the latest ICORE edition only). Styled in `_local.scss`.
 - `_layouts/about.liquid` — portrait alt from `page.profile.image_alt`; capitalised section headings.
 - `_sass/_footer.scss` — flex body to full viewport height so the footer sits at the bottom of short pages.
+- `assets/js/theme.js` — the theme toggle has two states (light/dark), not the gem's three (light/dark/system): `toggleThemeSetting` flips, and `determineThemeSetting` maps nothing-stored or a stored `system` to the OS preference. Everything else is the gem's file verbatim.
 - `assets/css/main.scss` — the gem's entry file, minus the `tabs`/`teachings`/`typograms` partials, plus a trailing `@use "local"`.
 - `_sass/_local.scss` — our CSS: FSU garnet accent (`#782f40` light, `#c96a80` dark) on `--global-theme-color`/`--global-hover-color`; `--local-year-color` for the `/publications/` year headings and buttons (the gem paints the headings in the divider colour, 1.25:1); dark-mode fix for the `/publications/` filter box; bold own name in author lists; the **1rem reading floor**.
 - `_plugins/social_link_labels.rb` — real labels + `aria-label` for navbar social icons (jekyll-socials derives "Github username" etc. from the key). Add to `LABELS` when adding a social with an ugly key.
@@ -50,7 +51,6 @@ Each gem copy keeps the gem's code verbatim apart from edits marked `Local chang
 Sass gotchas:
 
 - **Shadowing `_sass/_variables.scss` does not work.** Dart Sass resolves `@use` relative to the importing file first, so the gem's `_themes.scss` always gets the gem's copy. Only partials `@use`d directly by `assets/css/main.scss` can be shadowed.
-- `al-folio-cv.css` loads *after* `main.css`, so a `/cv/` rule needs a `.cv` prefix to win on specificity. The CV `<h6>`s have an inline font-size, hence one `!important`.
 - The 1rem floor exempts badges, icons, monospace and the footer. The footer is a hard constraint: the copyright line is 915px at 1rem vs 900px available, so it only fits at the gem's 0.9rem — re-measure before editing `footer_text`.
 
 Compile the CSS locally (output is byte-identical to the deploy's apart from `$max-content-width`):
@@ -71,7 +71,7 @@ Measure whether text fits on one line: fetch Roboto 300's TTF from `https://font
 | Bio, photo, blurbs | `_pages/about.md` |
 | Publications | `_bibliography/papers.bib`; home page picks in `_includes/selected_papers.liquid` |
 | News | `_news/YYYY-MM-DD-slug.md` |
-| Experience (the CV page, `/experience/`) | `_data/cv.yml`, in this site's own compact format (`title`+`year` = award, `line` = bullet), rendered by the Liquid and inline CSS in `_pages/cv.md` — not by `al_folio_cv`'s `cv` layout |
+| Experience (the CV page, `/experience/`) | `_data/cv.yml`, in this site's own compact format (`title`+`year` = award, `line` = bullet), rendered by the Liquid and inline CSS in `_pages/cv.md`. The `al_folio_cv` plugin was removed on purpose (its date-badge layout is not the look wanted); don't bring it back for this page |
 | Activities page (`/activities/`): talks, academic service, friends | `_pages/activities.html` (its CSS is inline in the page) |
 | Socials / coauthors / badge colours | `_data/socials.yml` / `coauthors.yml` / `venues.yml` |
 | Site metadata, flags | `_config.yml` |
@@ -98,7 +98,7 @@ Entries shared with Dahai Yu's site were taken from it (verified there against C
 
 ### CV PDF
 
-There is none yet, so no `cv_pdf` in `_data/socials.yml` or `_pages/cv.md`. When adding one, set both to the same path (`check.py` compares them).
+There is none yet. To add one, put it in `assets/pdf/` and set `cv_pdf:` in `_data/socials.yml` (a navbar icon; `check.py` checks the file exists). `_pages/cv.md` does not read `cv_pdf` — that was the removed plugin's layout; link the PDF from the page body if wanted there too.
 
 ## Findability
 

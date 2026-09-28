@@ -2,7 +2,7 @@
 
 <https://linjiang18.github.io>
 
-Academic homepage on the [al-folio](https://github.com/alshedivat/al-folio) Jekyll theme. The repo holds only content, two workflows, and ten small files that override or prune the theme; layouts, styles and Liquid tags come from the `al_folio_*` gems in the `Gemfile`. `CLAUDE.md` explains each local file.
+Academic homepage on the [al-folio](https://github.com/alshedivat/al-folio) Jekyll theme. The repo holds only content, two workflows, and eleven small files that override or prune the theme; layouts, styles and Liquid tags come from the `al_folio_*` gems in the `Gemfile`. `CLAUDE.md` explains each local file.
 
 **There is no local build.** Edit, push to `main`, and GitHub Actions builds and publishes the site. Pushing to any other branch, or opening a PR, runs the same build without deploying, so a mistake shows up as a red check instead of a broken site.
 

@@ -23,7 +23,6 @@ end
 group :al_folio_plugins do
     gem 'al_folio_core', '= 1.0.15' # layouts, includes, styles
     gem 'al_icons', '= 1.0.0'       # icon sets
-    gem 'al_folio_cv', '= 1.0.2'    # the /cv/ page from _data/cv.yml
     gem 'al_citations', '= 1.0.1'   # selected_papers.liquid calls its tag unconditionally
     gem 'al_img_tools', '= 1.0.3' # image zoom / lightbox
     gem 'al_search', '= 1.0.3'    # the navbar search box
