@@ -86,7 +86,7 @@ Measure whether text fits on one line: fetch Roboto 300's TTF from `https://font
 Entries shared with Dahai Yu's site were taken from it (verified there against Crossref, DBLP and the arXiv API; abstracts are the authors' own). The rest come from the v0 site.
 
 - Published paper: `doi` (the DOI button already reaches the publisher page), preprint kept only as `arxiv`. No `html` field on any entry: it duplicated the DOI or arXiv button. **Never add a second entry for the preprint.**
-- `note` = status line only ("Submitted to AAAI 2027.", co-first authors); no track names, and no "To appear." on accepted papers — the venue badge already says where it appears.
+- `note` = status line only ("Under submission." — never name the venue a paper is submitted to; co-first authors); no track names, and no "To appear." on accepted papers — the venue badge already says where it appears.
 - Only claim pages, volumes and author lists you can source. GeoGen (`10.1609/aaai.v40i2.37111`): the published author list has no Dahai Yu, even though DBLP and Scholar list him — go by the publisher.
 - Co-first authors: `*` after the last name (`Jiang*, Lin`) — the gem superscripts `*∗†‡§¶‖&^`, not `+`.
 - `code` = the "Code" button. Set on a hand-picked list (E4GEN, SynHAT, HealthMamba, EnergyMamba, GeoGen, UQGNN), not on every paper with a public repo; ask before adding more. Point it at the public GitHub repo, not an anonymous review link (E4GEN's `anonymous.4open.science` one in the paper has expired).
