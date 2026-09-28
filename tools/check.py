@@ -319,7 +319,73 @@ def check_bibliography(config: dict, data: dict) -> None:
 
     check_about_anchors({e.key for e in entries})
     check_selected_papers({e.key for e in entries})
+    check_publication_order(entries, data, config)
     check_coauthors(entries, data)
+
+
+# --------------------------------------------------------------------------- #
+# Publication order
+# --------------------------------------------------------------------------- #
+
+CCF_ORDER = {"A": 0, "B": 1, "C": 2}
+CORE_ORDER = {"A*": 0, "A": 1, "B": 2, "C": 3}
+ORDER_GROUPS = ["first/co-first author", "top venue (CCF A or CORE A*)", "other venue", "arXiv preprint"]
+
+
+def ccf_rank(venue: dict, year: int) -> str | None:
+    """The CCF rank from the newest list edition not newer than `year` (else the oldest listed) -- the same rule as _layouts/bib.liquid."""
+    rank = None
+    for edition, value in (venue.get("ccf") or {}).items():  # venues.yml lists editions newest first
+        rank = value
+        if int(edition) <= year:
+            break
+    return rank
+
+
+def self_position(authors: str, config: dict) -> tuple[int, bool]:
+    """The site owner's 1-based position in a bib author list, and whether it is marked co-first (`Jiang*, Lin`)."""
+    scholar = config.get("scholar") or {}
+    last_names, first_names = set(scholar.get("last_name") or []), set(scholar.get("first_name") or [])
+    for position, author in enumerate(authors.split(" and "), start=1):
+        last, _, first = (part.strip() for part in author.partition(","))
+        if last.rstrip("*") in last_names and first in first_names:
+            return position, last.endswith("*")
+    return 99, False
+
+
+def publication_order_key(entry: "Entry", venues: dict, config: dict) -> tuple:
+    """Sort key for an entry *within its year* on /publications/.
+
+    Groups, in order: accepted papers with the owner as first or co-first author (by venue tier); then accepted papers at a top venue (CCF A or ICORE A*); then other accepted papers; then arXiv preprints. Inside the last three groups the owner's author position comes first, then venue tier. Venue tier = CCF rank, then ICORE rank. Ties keep file order (Python's sort is stable).
+    """
+    abbr = entry.fields.get("abbr", "")
+    venue = venues.get(abbr) or {}
+    year = int(entry.fields.get("year", "0") or 0)
+    ccf, core = ccf_rank(venue, year), venue.get("core")
+    position, co_first = self_position(entry.fields.get("author", ""), config)
+    tier = (CCF_ORDER.get(ccf, 9), CORE_ORDER.get(core, 9))
+    if abbr == "arXiv":
+        return (3, position) + tier
+    if position == 1 or co_first:
+        return (0,) + tier
+    if ccf == "A" or core == "A*":
+        return (1, position) + tier
+    return (2, position) + tier
+
+
+def check_publication_order(entries: list["Entry"], data: dict, config: dict) -> None:
+    """jekyll-scholar lists a year's entries in papers.bib file order, so the file itself must follow the order rule (publication_order_key)."""
+    venues = data.get("venues")
+    if unknown(venues) or unknown(config):
+        return
+    by_year: dict[str, list] = {}
+    for entry in entries:
+        by_year.setdefault(entry.fields.get("year", "?"), []).append(entry)
+    for year, group in by_year.items():
+        expected = sorted(group, key=lambda e: publication_order_key(e, venues, config))
+        if [e.key for e in expected] != [e.key for e in group]:
+            listing = ", ".join(f"{e.key} ({ORDER_GROUPS[publication_order_key(e, venues, config)[0]]})" for e in expected)
+            error(f"papers.bib: the {year} entries are out of order; they should read: {listing}")
 
 
 def check_about_anchors(keys: set[str]) -> None:

@@ -90,6 +90,7 @@ Entries shared with Dahai Yu's site were taken from it (verified there against C
 - Only claim pages, volumes and author lists you can source. GeoGen (`10.1609/aaai.v40i2.37111`): the published author list has no Dahai Yu, even though DBLP and Scholar list him — go by the publisher.
 - Co-first authors: `*` after the last name (`Jiang*, Lin`) — the gem superscripts `*∗†‡§¶‖&^`, not `+`.
 - `code` = the "Code" button. Set on a hand-picked list (E4GEN, SynHAT, HealthMamba, EnergyMamba, GeoGen, UQGNN), not on every paper with a public repo; ask before adding more. Point it at the public GitHub repo, not an anonymous review link (E4GEN's `anonymous.4open.science` one in the paper has expired).
+- Order within a year = file order, and the file follows a fixed rule: own first/co-first-author accepted papers (by venue tier), then top venues (CCF A or ICORE A*), then other venues, then arXiv — the last three by Lin's author position, then tier. `publication_order_key` in `tools/check.py` is the rule; the check prints the expected order, so place a new entry where it says.
 - New custom bib fields must go in `filtered_bibtex_keywords` or they show in the BibTeX popup.
 
 ### Thumbnails
