@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-We released a new preprint [**SynEnergy**](/publications/#jiang2026synenergy), which uses learned anomaly semantics to guide diffusion models toward **Anomaly-preserving Energy Data Generation**.
+We released a new preprint [**SynEnergy**](/publications/#jiang2026synenergy), which focuses on **anomaly-preserving synthetic energy data generation** using diffusion models.
