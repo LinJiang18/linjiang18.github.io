@@ -102,6 +102,12 @@ html[data-theme="dark"] .bibsearch-form-input {
   text-align: center;
 }
 
+/* News: a paper's name links to its entry on /publications/ but keeps the text colour, so a row reads as bold text, not as a row of accent-coloured links. The gem's hover underline still marks it clickable. Other links in news (an external site, an item's own page) keep the accent. */
+.news a[href^="/publications/#"],
+.news a[href^="/publications/#"]:hover {
+  color: inherit;
+}
+
 
 /* -----------------------------------------------------------------------------
  * Bibliography: the venue's CCF / CORE ranks under its badge.

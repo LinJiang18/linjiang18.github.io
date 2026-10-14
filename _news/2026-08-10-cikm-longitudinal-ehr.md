@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One paper **SynEHR** about **Longitudinal EHR Synthesis** has been accepted by _CIKM 2026_.
+One paper [**SynEHR**](/publications/#li2026synehr) about **Longitudinal EHR Synthesis** has been accepted by _CIKM 2026_.

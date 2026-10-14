@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-We released a new preprint **CrossTF**, which leverages the complementary strengths of time and frequency views in diffusion models to improve **Extreme-aware Time-series Generation**.
+We released a new preprint [**CrossTF**](/publications/#jiang2026crosstf), which leverages the complementary strengths of time and frequency views in diffusion models to improve **Extreme-aware Time-series Generation**.
