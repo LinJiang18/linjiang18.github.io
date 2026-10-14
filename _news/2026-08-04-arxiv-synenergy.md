@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-We released a new preprint [**SynEnergy**](/publications/#jiang2026synenergy), which focuses on **anomaly-preserving synthetic energy data generation** using diffusion models.
+We released a new preprint [**SynEnergy**](/publications/#jiang2026synenergy), which focuses on **Anomaly-preserving Synthetic Energy Data Generation** using diffusion models.
