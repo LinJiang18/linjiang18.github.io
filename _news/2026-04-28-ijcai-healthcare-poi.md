@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper [**HealthMamba**](/publications/#yu2026healthmamba) about **healthcare POI visitation prediction** has been accepted to _IJCAI 2026_ (AI and Health Track).
+Our paper [**HealthMamba**](/publications/#yu2026healthmamba) about **healthcare POI visitation prediction** has been accepted to **IJCAI 2026** (AI and Health Track).

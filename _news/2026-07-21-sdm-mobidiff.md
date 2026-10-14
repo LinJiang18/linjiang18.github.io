@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One paper [**MobiDiff**](/publications/#xu2026mobidiff) about **Human Mobility Data Generation** has been accepted by _SDM 2026_.
+One paper [**MobiDiff**](/publications/#xu2026mobidiff) about **Human Mobility Data Generation** has been accepted by **SDM 2026**.
