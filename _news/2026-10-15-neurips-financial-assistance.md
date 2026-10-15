@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Honored to receive the **NeurIPS 2026 Financial Assistance Award**, covering full conference and workshop registration and the hotel stay in Atlanta.
+Honored to receive the **NeurIPS 2026 Financial Assistance Award**. Many thanks to the organizing committee, and see you in Atlanta!
