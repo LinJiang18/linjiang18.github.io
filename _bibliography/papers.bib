@@ -22,7 +22,7 @@
 %   code                -> "Code" button; only on papers chosen to show one (not every paper with public code)
 %   arxiv               -> preprint of a published paper; do NOT add a second entry for the preprint, it would duplicate the paper
 %   note                -> rendered as a second line under the venue
-%   award_name / award  -> "Oral" button (theme colour) in the links row; `award` is the text it expands to. Only on papers given an oral presentation
+%   oral = {true}       -> "(Oral Presentation)" after the venue and year (local change in _layouts/bib.liquid)
 %   Jiang*, Dey*        -> `*` after a last name marks a co-first author; the theme renders it as a superscript
 %
 % Within a year, /publications/ lists entries in file order, so the file follows this order (tools/check.py enforces it and prints the right order):
@@ -36,8 +36,7 @@
   abbr        = {KDD},
   preview     = {synenergy.png},
   bibtex_show = {true},
-  award_name  = {Oral},
-  award       = {Oral presentation at KDD 2027 (oral acceptance rate: 6%).},
+  oral        = {true},
   title       = {SynEnergy: Anomaly Semantic-Guided Diffusion for Synthetic Energy Data Generation},
   author      = {Jiang, Lin and Yu, Dahai and Gelli, Ravikumar and Wang, Guang},
   booktitle   = kdd,
@@ -258,8 +257,7 @@
   abbr        = {IJCAI},
   preview     = {hcride.png},
   bibtex_show = {true},
-  award_name  = {Oral},
-  award       = {Oral presentation at IJCAI 2025.},
+  oral        = {true},
   title       = {HCRide: Harmonizing Passenger Fairness and Driver Preference for Human-Centered Ride-Hailing},
   author      = {Jiang, Lin and Yang, Yu and Wang, Guang},
   booktitle   = ijcai,
@@ -274,8 +272,7 @@
   abbr        = {IJCAI},
   preview     = {epopr.png},
   bibtex_show = {true},
-  award_name  = {Oral},
-  award       = {Oral presentation at IJCAI 2025.},
+  oral        = {true},
   title       = {Uncertainty-aware Predict-Then-Optimize Framework for Equitable Post-Disaster Power Restoration},
   author      = {Jiang, Lin and Yu, Dahai and Xu, Rongchao and Tang, Tian and Wang, Guang},
   booktitle   = ijcai,
@@ -320,8 +317,7 @@
   abbr        = {KDD},
   preview     = {faircod.png},
   bibtex_show = {true},
-  award_name  = {Oral},
-  award       = {Oral presentation at KDD 2023.},
+  oral        = {true},
   title       = {FairCod: A Fairness-aware Concurrent Dispatch System for Large-scale Instant Delivery Services},
   author      = {Jiang, Lin and Wang, Shuai and Guo, Baoshen and Wang, Hai and Zhang, Desheng and Wang, Guang},
   booktitle   = kdd,
