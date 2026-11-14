@@ -222,10 +222,10 @@
     {% assign entrytype_text = entrytype | strip_html | strip %}
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
     {% comment %}
-      Local change: `oral = {true}` in papers.bib appends "(Oral Presentation)" after the venue and year.
+      Local change: `oral = {true}` in papers.bib appends "(Oral)" after the venue and year.
     {% endcomment %}
     <div class="periodical">
-      {{ periodical | strip }}{% if entry.oral %} (Oral Presentation){% endif %}
+      {{ periodical | strip }}{% if entry.oral %} (Oral){% endif %}
     </div>
     <div class="periodical">
       {{ entry.note | strip }}
