@@ -212,7 +212,7 @@ scholar:
 # No `enable_publication_badges`: a badge needs a per-entry `altmetric`, `dimensions` or `google_scholar_id` field and no entry in papers.bib has one, so the flags rendered nothing while still loading the Altmetric and Dimensions scripts on /publications/.
 
 # Hide these from the BibTeX popup: they are al-folio's own fields, not bibliography data. Only the ones papers.bib actually uses are listed — add a field here when you start using it, or it shows up in the popup.
-filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, code, preview]
+filtered_bibtex_keywords: [abbr, abstract, arxiv, award, award_name, bibtex_show, code, preview]
 
 # Misleading name: this flag gates the whole left-hand column of a bibliography entry -- the venue badge from _data/venues.yml as well as the `preview` thumbnail.
 enable_publication_thumbnails: true

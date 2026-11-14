@@ -91,6 +91,7 @@ Entries shared with Dahai Yu's site were taken from it (verified there against C
 - Co-first authors: `*` after the last name (`Jiang*, Lin`) — the gem superscripts `*∗†‡§¶‖&^`, not `+`.
 - `code` = the "Code" button. Set on a hand-picked list (E4GEN, CrossTF, SynHAT, HealthMamba, EnergyMamba, GeoGen, UQGNN), not on every paper with a public repo; ask before adding more. Point it at the public GitHub repo, not an anonymous review link (E4GEN's `anonymous.4open.science` one in the paper has expired).
 - Order within a year = file order, and the file follows a fixed rule: own first/co-first-author accepted papers (by venue tier), then top venues (CCF A or ICORE A*), then other venues, then arXiv — the last three by Lin's author position, then tier. `publication_order_key` in `tools/check.py` is the rule; the check prints the expected order, so place a new entry where it says. The bio's parenthesised paper lists in `about.md` are ordered by hand, by the user's choice (E4GEN first), not by this rule — don't reorder them to match.
+- Oral papers: `award_name = {Oral}` + `award = {Oral presentation at <VENUE YEAR>.}` — the gem's own award button (theme-coloured, first in the links row; clicking expands `award`). No template change. Set on SynEnergy, HCRide, UPRO, FairCod.
 - New custom bib fields must go in `filtered_bibtex_keywords` or they show in the BibTeX popup.
 
 ### Thumbnails
